@@ -25,7 +25,7 @@
 
 ## インストール  
 * [リリースページのフレームワークファイル](https://github.com/aromajoin/controller-sdk-ios/releases)をダウンロードする。
-* プロジェクトにドラッグしてドロップします。 （プロジェクトのターゲットページの*Embedded Binariesセクション*に追加されていることを確認してください）。
+* プロジェクトにドラッグ＆ドロップします。 （プロジェクトのターゲットページの*Embedded Binariesセクション*に追加されていることを確認してください）。
 
 ## 使用法
 
@@ -40,8 +40,8 @@ var controller = AromaShooterController.sharedInstance
 ```
 
 ### デバイスの接続  
-選択が二つございます。
-* `sample`アプリケーションの内部にある既存の接続画面（ConnectionViewController）を使用してください。 これは簡単で推奨です。
+２つの選択肢がございます。
+* 【推奨】sampleアプリケーションの内部にある既存の接続画面（ConnectionViewController）を使用してください。
    * このリポジトリをチェックして、プロジェクトに入れるために `ConnectionViewController.swift`ファイルを取得してください。
    * 詳細については、`sample`アプリケーションを見てください。  
 * APIを使って独自の接続画面を作成してください。
@@ -79,7 +79,7 @@ let connectedDevices = controller.connectedDevices
  */
 controller.diffuseAll(duration: 3000, booster: true, ports: [1, 2, 3])
 ```  
-* 特定のデバイスに香りを拡散する。
+* 特定のデバイスに香りを噴射する。
 ```swift
 controller.diffuse(aromaShooters: devices, duration: 3000, booster: true, port: [1, 2, 3])
 ```  
