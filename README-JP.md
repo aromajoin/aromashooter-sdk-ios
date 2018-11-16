@@ -12,8 +12,9 @@
 3. [インストール](#インストール)
 4. [使用法](#使用法)
     * [デバイスの接続](#デバイス接続)
-    * [接続されたデバイス](#接続されたデバイス)
+    * [接続されたデバイス](#デバイスの接続・切断)
     * [香りを噴射する](#香りを噴射する)
+    * [噴射を止める](#噴射を止める)
 5. [ライセンス](#ライセンス)
 
 ## 対応デバイス
@@ -74,6 +75,11 @@ controller.diffuseAll(duration: 3000, booster: true, ports: [1, 2, 3])
 ```swift
 controller.diffuse(aromaShooters: devices, duration: 3000, booster: true, port: [1, 2, 3])
 ```  
+### 噴射を止める
+噴射している場合は、接続されているデバイスのすべてのポートを停止します。
+```swift
+constroller.stopAll()
+```
 
 **詳細については、このリポジトリをチェックアウトし、
 [サンプルプロジェクト](https://github.com/aromajoin/controller-sdk-ios/tree/master/sample)を参照してください。**  
