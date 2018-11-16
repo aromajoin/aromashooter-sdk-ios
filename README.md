@@ -11,9 +11,10 @@
 2. [Prerequisites](#prerequisites)
 3. [Installation](#installation)
 4. [Usage](#usage)
-    * [Connect devices](#connect-devices)
+    * [Connect/Disconnect devices](#connect/disconnect-devices)
     * [Get connected devices](#get-connected-devices)
     * [Diffuse scents](#diffuse-scents)
+    * [Stop diffusing](#stop)
 5. [License](#license)
 
 ## Supported devices
@@ -69,6 +70,11 @@ controller.diffuseAll(duration: 3000, booster: true, ports: [1, 2, 3])
 ```swift
 controller.diffuse(aromaShooters: devices, duration: 3000, booster: true, port: [1, 2, 3])
 ```  
+### Stop diffusing
+Stop all ports of current connected devices if they have been diffusing 
+```swift
+controller.stopAll();
+```
 
 **For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/controller-sdk-ios/tree/master/sample).**  
 **If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/controller-sdk-ios/issues).** 
