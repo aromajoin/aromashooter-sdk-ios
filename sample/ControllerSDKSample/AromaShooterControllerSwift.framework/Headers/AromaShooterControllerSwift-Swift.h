@@ -214,6 +214,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AromaShooter
 /// \param ports An array of multiple ports
 ///
 - (void)diffuseAllWithDuration:(NSInteger)duration booster:(BOOL)booster ports:(NSArray<NSNumber *> * _Nonnull)ports SWIFT_DEPRECATED_OBJC("Swift method 'AromaShooterController.diffuseAll(duration:booster:ports:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+/// Stop diffusing aroma at all connected Aroma Shooter devices
+- (void)stopAll SWIFT_DEPRECATED_OBJC("Swift method 'AromaShooterController.stopAll()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @end
 
 #if __has_attribute(external_source_symbol)

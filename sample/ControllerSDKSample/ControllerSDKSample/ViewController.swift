@@ -11,5 +11,9 @@ class ViewController: UIViewController {
   @IBAction func diffuseAroma(_ sender: UIButton) {
     aromaShooterController.diffuseAll(duration: 2000, booster: true, ports: [sender.tag])
   }
+  
+  @IBAction func stopDiffusing(_ sender: UIButton) {
+    aromaShooterController.stopAll()
+  }
 }
 
