@@ -11,7 +11,7 @@
 2. [Prerequisites](#prerequisites)
 3. [Installation](#installation)
 4. [Usage](#usage)
-    * [Connect/Disconnect devices](#connect/disconnect-devices)
+    * [Connect/Disconnect devices](#connectdisconnect-devices)
     * [Get connected devices](#get-connected-devices)
     * [Diffuse scents](#diffuse-scents)
     * [Stop diffusing](#stop)
