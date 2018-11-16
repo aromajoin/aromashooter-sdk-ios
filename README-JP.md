@@ -39,31 +39,22 @@ import AromaShooterControlerSwift
 var controller = AromaShooterController.sharedInstance
 ```
 
-### デバイスの接続  
-２つの選択肢がございます。
-* 【推奨】sampleアプリケーションの内部にある既存の接続画面（ConnectionViewController）を使用してください。
-   * このリポジトリをチェックして、プロジェクトに入れるために `ConnectionViewController.swift`ファイルを取得してください。
-   * 詳細については、`sample`アプリケーションを見てください。  
-* APIを使って独自の接続画面を作成してください。
-   * AromaShooterデバイスをスキャンする
-   ```swift
-   controller.startScanning()
-   ```  
-   * ビューコントローラが消えるとスキャンが停止することを確認してください。
-   ```swift
-    override func viewWillDisappear(_ animated: Bool) {
-        // Stop searching
-        controller.stopScanning()
-    }
-   ```  
-   * 接続する
-   ```swift
-   controller.connect(aromaShooters: devices)
-   ```  
-   * 切断する
-   ```swift
-   controller.disconnect(aromaShooter: device)
-   ```  
+### デバイスの接続・切断
+接続UI部分が完成しました。2つの方法のいずれかによって、接続ビューコントローラを簡単に開くことができます。
+`NavigationController`を使用している場合は、これらのコードを使用してください。
+```swift
+let connectionVC = aromaShooterController.getConnectionViewController()
+if let connectionVC = connectionVC {
+  self.navigationController?.pushViewController(connectionVC, animated: true)
+}
+```
+それ以外の場合は、以下のコードを使用してください。
+```swift
+let connectionVC = aromaShooterController.getConnectionViewController()
+if let connectionVC = connectionVC {
+  self.present(connectionVC, animated: true, completion: nil)
+}
+```
 
 ### 接続されたデバイス
 ```swift
