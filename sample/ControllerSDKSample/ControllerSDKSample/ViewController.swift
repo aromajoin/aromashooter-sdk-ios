@@ -15,5 +15,12 @@ class ViewController: UIViewController {
   @IBAction func stopDiffusing(_ sender: UIButton) {
     aromaShooterController.stopAll()
   }
+  
+  @IBAction func openConnectionScreen(_ sender: Any) {
+    let connectionVC = aromaShooterController.getConnectionViewController()
+    if let connectionVC = connectionVC {
+      self.navigationController?.pushViewController(connectionVC, animated: true)
+    }
+  }
 }
 

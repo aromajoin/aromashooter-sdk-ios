@@ -164,7 +164,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import CoreBluetooth;
+@import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -181,6 +184,34 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="AromaShooterControllerSwift",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+@class UITableView;
+@class UIView;
+@class UITableViewCell;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC27AromaShooterControllerSwift26ASConnectionViewController")
+@interface ASConnectionViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ASConnectionViewController (SWIFT_EXTENSION(AromaShooterControllerSwift))
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+
 
 @class CBCentralManager;
 @class CBPeripheral;
@@ -204,6 +235,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AromaShooter
 - (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverCharacteristicsForService:(CBService * _Nonnull)service error:(NSError * _Nullable)error;
 @end
 
+@class UIViewController;
+
+@interface AromaShooterController (SWIFT_EXTENSION(AromaShooterControllerSwift))
+/// Returns the connection view controller
+/// That can be used as connection screen to connect/disconnet AromaShooter
+- (UIViewController * _Nullable)getConnectionViewController SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_OBJC("Swift method 'AromaShooterController.getConnectionViewController()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@end
+
 
 @interface AromaShooterController (SWIFT_EXTENSION(AromaShooterControllerSwift))
 /// Diffuse aromas at multiple ports from all connected Aroma Shooter devices
@@ -216,6 +255,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AromaShooter
 - (void)diffuseAllWithDuration:(NSInteger)duration booster:(BOOL)booster ports:(NSArray<NSNumber *> * _Nonnull)ports SWIFT_DEPRECATED_OBJC("Swift method 'AromaShooterController.diffuseAll(duration:booster:ports:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 /// Stop diffusing aroma at all connected Aroma Shooter devices
 - (void)stopAll SWIFT_DEPRECATED_OBJC("Swift method 'AromaShooterController.stopAll()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@end
+
+
+SWIFT_CLASS("_TtC27AromaShooterControllerSwift19DeviceTableViewCell")
+@interface DeviceTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)
