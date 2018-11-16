@@ -19,7 +19,6 @@
 ## Supported devices
 * Aroma Shooter Bluetooth version 
 
-
 ## Prerequisites
 * iOS version: >= 8.0
 * Swift version: >= 3.0
@@ -40,31 +39,22 @@ import AromaShooterControlerSwift
 var controller = AromaShooterController.sharedInstance
 ```
 
-### Connect devices  
-There are 2 options.
-* Use the existing connection screen (ConnectionViewController) inside `sample` app. This is easy and recommended. 
-   * Please check out this repository, grab `ConnectionViewController.swift` file to put in your project. 
-   * For further detail, please take a look our `sample` applicaton.  
-* Write your own connection screen using our API.
-   * Scan AromaShooter devices
-   ```swift
-   controller.startScanning()
-   ```  
-   * Make sure that scanning is stopped when the view controller dissapear
-   ```swift
-    override func viewWillDisappear(_ animated: Bool) {
-        // Stop searching
-        controller.stopScanning()
-    }
-   ```  
-   * Connect
-   ```swift
-   controller.connect(aromaShooters: devices)
-   ```  
-   * Disconnect
-   ```swift
-   controller.disconnect(aromaShooter: device)
-   ```  
+### Connect/disconnect devices
+We have done the connection UI part for you. You can easily open the connection view controller by one of two ways.
+if you are using `NavigationController`, please use these codes.
+```swift
+let connectionVC = aromaShooterController.getConnectionViewController()
+if let connectionVC = connectionVC {
+  self.navigationController?.pushViewController(connectionVC, animated: true)
+}
+```
+In other cases, you can use the below codes.
+```swift
+let connectionVC = aromaShooterController.getConnectionViewController()
+if let connectionVC = connectionVC {
+  self.present(connectionVC, animated: true, completion: nil)
+}
+```
 
 ### Get connected devices
 ```swift
