@@ -44,14 +44,14 @@ var controller = AromaShooterController.sharedInstance
 接続UI部分が完成しました。2つの方法のいずれかによって、接続ビューコントローラを簡単に開くことができます。
 `NavigationController`を使用している場合は、これらのコードを使用してください。
 ```swift
-let connectionVC = aromaShooterController.getConnectionViewController()
+let connectionVC = controller.getConnectionViewController()
 if let connectionVC = connectionVC {
   self.navigationController?.pushViewController(connectionVC, animated: true)
 }
 ```
 それ以外の場合は、以下のコードを使用してください。
 ```swift
-let connectionVC = aromaShooterController.getConnectionViewController()
+let connectionVC = controller.getConnectionViewController()
 if let connectionVC = connectionVC {
   self.present(connectionVC, animated: true, completion: nil)
 }
