@@ -44,14 +44,14 @@ var controller = AromaShooterController.sharedInstance
 We have done the connection UI part for you. You can easily open the connection view controller by one of two ways.
 if you are using `NavigationController`, please use these codes.
 ```swift
-let connectionVC = aromaShooterController.getConnectionViewController()
+let connectionVC = controller.getConnectionViewController()
 if let connectionVC = connectionVC {
   self.navigationController?.pushViewController(connectionVC, animated: true)
 }
 ```
 In other cases, you can use the below codes.
 ```swift
-let connectionVC = aromaShooterController.getConnectionViewController()
+let connectionVC = controller.getConnectionViewController()
 if let connectionVC = connectionVC {
   self.present(connectionVC, animated: true, completion: nil)
 }
