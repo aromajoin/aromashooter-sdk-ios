@@ -12,19 +12,19 @@
 		CEBA38E01E5AF0D500FD56A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBA38DE1E5AF0D500FD56A0 /* Main.storyboard */; };
 		CEBA38E21E5AF0D500FD56A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBA38E11E5AF0D500FD56A0 /* Assets.xcassets */; };
 		CEBA38E51E5AF0D500FD56A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBA38E31E5AF0D500FD56A0 /* LaunchScreen.storyboard */; };
-		CEE2DB89219E9FA7008893DF /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2DB88219E9FA7008893DF /* AromaShooterControllerSwift.framework */; };
-		CEE2DB8A219E9FB0008893DF /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2DB88219E9FA7008893DF /* AromaShooterControllerSwift.framework */; };
-		CEE2DB8B219E9FB0008893DF /* AromaShooterControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2DB88219E9FA7008893DF /* AromaShooterControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEC85D2E231393FD0043EEAD /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC85D2D231393FD0043EEAD /* AromaShooterControllerSwift.framework */; };
+		CEC85D2F231394020043EEAD /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC85D2D231393FD0043EEAD /* AromaShooterControllerSwift.framework */; };
+		CEC85D30231394020043EEAD /* AromaShooterControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEC85D2D231393FD0043EEAD /* AromaShooterControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CE51DDD01F6B6BF200B84E9B /* Embed Frameworks */ = {
+		CEC85D31231394020043EEAD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CEE2DB8B219E9FB0008893DF /* AromaShooterControllerSwift.framework in Embed Frameworks */,
+				CEC85D30231394020043EEAD /* AromaShooterControllerSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +39,7 @@
 		CEBA38E11E5AF0D500FD56A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBA38E41E5AF0D500FD56A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBA38E61E5AF0D500FD56A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEE2DB88219E9FA7008893DF /* AromaShooterControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AromaShooterControllerSwift.framework; path = ../../framework/AromaShooterControllerSwift.framework; sourceTree = "<group>"; };
+		CEC85D2D231393FD0043EEAD /* AromaShooterControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AromaShooterControllerSwift.framework; path = ../../framework/AromaShooterControllerSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE2DB8A219E9FB0008893DF /* AromaShooterControllerSwift.framework in Frameworks */,
-				CEE2DB89219E9FA7008893DF /* AromaShooterControllerSwift.framework in Frameworks */,
+				CEC85D2F231394020043EEAD /* AromaShooterControllerSwift.framework in Frameworks */,
+				CEC85D2E231393FD0043EEAD /* AromaShooterControllerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,7 @@
 		CEBA38CE1E5AF0D500FD56A0 = {
 			isa = PBXGroup;
 			children = (
-				CEE2DB88219E9FA7008893DF /* AromaShooterControllerSwift.framework */,
+				CEC85D2D231393FD0043EEAD /* AromaShooterControllerSwift.framework */,
 				CEBA38D91E5AF0D500FD56A0 /* ControllerSDKSample */,
 				CEBA38D81E5AF0D500FD56A0 /* Products */,
 			);
@@ -95,7 +95,7 @@
 				CEBA38D31E5AF0D500FD56A0 /* Sources */,
 				CEBA38D41E5AF0D500FD56A0 /* Frameworks */,
 				CEBA38D51E5AF0D500FD56A0 /* Resources */,
-				CE51DDD01F6B6BF200B84E9B /* Embed Frameworks */,
+				CEC85D31231394020043EEAD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +128,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -220,6 +221,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -278,6 +280,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
