@@ -76,6 +76,7 @@ controller.diffuseAll(duration: 3000, booster: true, ports: [1, 2, 3])
 controller.diffuse(aromaShooters: devices, duration: 3000, booster: true, port: [1, 2, 3])
 ```  
 
+* AS2（Aroma Shooter 2）デバイスのみのディフューザー香りメソッド
 ```swift
 controller.diffuseAll(durationInMilli: 1000, boosterIntensity: 0, fanIntensity: 50, ports: [CartridgePort(number: 3, intensityPercent: 100)])
 
