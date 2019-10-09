@@ -254,6 +254,10 @@ SWIFT_CLASS("_TtC27AromaShooterControllerSwift22AromaShooterController")
 
 
 
+
+
+
+
 SWIFT_CLASS("_TtC27AromaShooterControllerSwift19DeviceTableViewCell")
 @interface DeviceTableViewCell : UITableViewCell
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);

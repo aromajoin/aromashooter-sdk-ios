@@ -14,6 +14,8 @@ The binary file, sample, and documentation is distributed on a separate [Github 
  
  ## Usage
  
+ ## AS1 AromaShooter Device. Method from AS1 only work with AS1 AromaShooter Device
+ 
  ### Get Controller references
  * Import Controller module
  ```swift
@@ -59,6 +61,18 @@ The binary file, sample, and documentation is distributed on a separate [Github 
  ```swift
  constroller.stopAll()
  ```
+ 
+ ## AS2 AromaShooter Device. Note: Method from AS1 can also be use with AS2 AromaShooter device
+ 
+ ### Diffuse scents. 
+ * Diffuse scents of all connected devices  
+ ```swift
+ controller.diffuseAll(durationInMilli: 1000, boosterIntensity: 0, fanIntensity: 50, ports: [CartridgePort(number: 3, intensityPercent: 100)])
+ ```  
+ * Diffuse scents of specific devices  
+ ```swift
+ controller.diffuse(aromaShooters: controller.connectedDevices, durationInMilli: 1000, boosterIntensity: 0, fanIntensity: 0, ports: [CartridgePort(number: 3, intensityPercent: 100)])
+ ```  
  
  ## License
  Copyright (c) 2017-present Aromajoin Corporation
