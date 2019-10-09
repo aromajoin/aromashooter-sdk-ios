@@ -75,6 +75,13 @@ controller.diffuseAll(duration: 3000, booster: true, ports: [1, 2, 3])
 ```swift
 controller.diffuse(aromaShooters: devices, duration: 3000, booster: true, port: [1, 2, 3])
 ```  
+
+```swift
+controller.diffuseAll(durationInMilli: 1000, boosterIntensity: 0, fanIntensity: 50, ports: [CartridgePort(number: 3, intensityPercent: 100)])
+
+controller.diffuse(aromaShooters: controller.connectedDevices, durationInMilli: 1000, boosterIntensity: 50, fanIntensity: 40, ports: [CartridgePort(number: 3, intensityPercent: 100)])
+``` 
+
 ### 噴射を止める
 噴射している場合は、接続されているデバイスのすべてのポートを停止します。
 ```swift
