@@ -73,11 +73,9 @@ controller.diffuse(aromaShooters: devices, duration: 3000, booster: true, port: 
 * Diffuse scents method for AS2 (AromaShooter 2) devices only
 ```swift
 controller.diffuseAll(durationInMilli: 1000, boosterIntensity: 0, fanIntensity: 50, ports: [CartridgePort(number: 3, intensityPercent: 100)])
-``` 
 
-```swift
 controller.diffuse(aromaShooters: controller.connectedDevices, durationInMilli: 1000, boosterIntensity: 50, fanIntensity: 40, ports: [CartridgePort(number: 3, intensityPercent: 100)])
-```  
+``` 
 
 ### Stop diffusing
 Stop all ports of current connected devices if they have been diffusing 
