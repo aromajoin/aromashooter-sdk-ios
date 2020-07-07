@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iyk-Kr-oBS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iyk-Kr-oBS">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -73,37 +73,37 @@
                                     <action selector="diffuseAroma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9G-Ix-jmh"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZTC-iL-3yA">
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZTC-iL-3yA">
                                 <rect key="frame" x="14" y="217" width="130" height="30"/>
                                 <connections>
                                     <action selector="intensitySlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZBc-xL-01Z"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-14-5w2">
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-14-5w2">
                                 <rect key="frame" x="225" y="218" width="131" height="30"/>
                                 <connections>
                                     <action selector="intensitySlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="l7o-s4-YeQ"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o7y-WT-rUR">
+                            <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o7y-WT-rUR">
                                 <rect key="frame" x="16" y="393" width="130" height="30"/>
                                 <connections>
                                     <action selector="intensitySlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="FYB-3e-Fn7"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fC8-gY-Z5A">
+                            <slider opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fC8-gY-Z5A">
                                 <rect key="frame" x="225" y="393" width="133" height="30"/>
                                 <connections>
                                     <action selector="intensitySlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="MSf-pg-jTC"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="mp8-Ls-185">
+                            <slider opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="mp8-Ls-185">
                                 <rect key="frame" x="18" y="570" width="130" height="30"/>
                                 <connections>
                                     <action selector="intensitySlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="sa8-rL-pQ9"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-f5-YdY">
+                            <slider opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-f5-YdY">
                                 <rect key="frame" x="225" y="569" width="133" height="30"/>
                                 <connections>
                                     <action selector="intensitySlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="glq-yk-xCv"/>
@@ -178,7 +178,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KYf-MT-P1H">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="DLK-QQ-82V">
-                            <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="duration in milisecond" textAlignment="natural" minimumFontSize="17" id="igh-19-ZgJ">
+                            <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3000" borderStyle="roundedRect" placeholder="duration in milisecond" textAlignment="natural" minimumFontSize="17" id="igh-19-ZgJ">
                                 <rect key="frame" x="16" y="5" width="170" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

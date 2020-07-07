@@ -10,7 +10,7 @@ class ViewController: UIViewController {
 
   var intensities: [Int] = [0, 0, 0, 0, 0, 0]
 
-  var durationInMiliSec: Int = 0
+  var durationInMiliSec: Int = 3000
 
   @IBAction func diffuseAroma(_ sender: UIButton) {
     // Work with both AS1 and AS2
