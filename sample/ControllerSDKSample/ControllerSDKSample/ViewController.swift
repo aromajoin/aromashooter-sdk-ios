@@ -8,16 +8,19 @@ import AromaShooterControllerSwift
 class ViewController: UIViewController {
   let aromaShooterController = AromaShooterController.sharedInstance
 
-  var intensities: [Int] = [0, 0, 0, 0, 0, 0]
+  var intensities: [Int] = [100, 100, 100, 100, 100, 100]
 
   var durationInMiliSec: Int = 3000
 
   @IBAction func diffuseAroma(_ sender: UIButton) {
-    // Work with both AS1 and AS2
-    aromaShooterController.diffuseAll(duration: durationInMiliSec, booster: true, ports: [sender.tag])
-
+    let cartridgeNumber = sender.tag
     // Work only with AS2
-    aromaShooterController.diffuseAll(durationInMilli: durationInMiliSec, boosterIntensity: 0, fanIntensity: 0, ports: [CartridgePort(number: sender.tag, intensityPercent: intensities[sender.tag-1])])
+    aromaShooterController.diffuseAll(durationInMilli: durationInMiliSec, boosterIntensity: 100, fanIntensity: 100, ports: [CartridgePort(number: cartridgeNumber, intensityPercent: intensities[cartridgeNumber - 1])])
+    
+    // If you want to work with our older version of Aroma Shooter
+    // Please uncomment the code below
+    
+    // aromaShooterController.diffuseAll(duration: durationInMiliSec, booster: true, ports: [sender.tag])
   }
 
   @IBAction func stopDiffusing(_ sender: UIButton) {
