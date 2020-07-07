@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		331E4EC2234DB9EF007B7F0F /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331E4EC1234DB9EF007B7F0F /* AromaShooterControllerSwift.framework */; };
-		331E4EC3234DBA15007B7F0F /* AromaShooterControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 331E4EC1234DB9EF007B7F0F /* AromaShooterControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		333C43C824B3F94200A72542 /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333C43C624B3F91B00A72542 /* AromaShooterControllerSwift.framework */; };
+		333C43C924B3F94200A72542 /* AromaShooterControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 333C43C624B3F91B00A72542 /* AromaShooterControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEBA38DB1E5AF0D500FD56A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA38DA1E5AF0D500FD56A0 /* AppDelegate.swift */; };
 		CEBA38DD1E5AF0D500FD56A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA38DC1E5AF0D500FD56A0 /* ViewController.swift */; };
 		CEBA38E01E5AF0D500FD56A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBA38DE1E5AF0D500FD56A0 /* Main.storyboard */; };
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				331E4EC3234DBA15007B7F0F /* AromaShooterControllerSwift.framework in Embed Frameworks */,
+				333C43C924B3F94200A72542 /* AromaShooterControllerSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,7 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		331E4EC1234DB9EF007B7F0F /* AromaShooterControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AromaShooterControllerSwift.framework; sourceTree = "<group>"; };
+		333C43C624B3F91B00A72542 /* AromaShooterControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AromaShooterControllerSwift.framework; sourceTree = "<group>"; };
 		CEBA38D71E5AF0D500FD56A0 /* ControllerSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBA38DA1E5AF0D500FD56A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBA38DC1E5AF0D500FD56A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				331E4EC2234DB9EF007B7F0F /* AromaShooterControllerSwift.framework in Frameworks */,
+				333C43C824B3F94200A72542 /* AromaShooterControllerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		CEBA38CE1E5AF0D500FD56A0 = {
 			isa = PBXGroup;
 			children = (
-				331E4EC1234DB9EF007B7F0F /* AromaShooterControllerSwift.framework */,
+				333C43C624B3F91B00A72542 /* AromaShooterControllerSwift.framework */,
 				CEBA38D91E5AF0D500FD56A0 /* ControllerSDKSample */,
 				CEBA38D81E5AF0D500FD56A0 /* Products */,
 			);

@@ -1,0 +1,92 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.16.9 clang-1200.0.22.5)
+// swift-module-flags: -target arm64-apple-ios8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AromaShooterControllerSwift
+@_exported import AromaShooterControllerSwift
+import CoreBluetooth
+import Foundation
+import Swift
+import UIKit
+public struct CartridgePort {
+  public let number: Swift.Int
+  public let intensityPercent: Swift.Int
+  public init(number: Swift.Int, intensityPercent: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers public class DeviceTableViewCell : UIKit.UITableViewCell {
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers public class ASConnectionViewController : UIKit.UITableViewController {
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc deinit
+  @objc override dynamic public init(style: UIKit.UITableView.Style)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension ASConnectionViewController : AromaShooterControllerSwift.AromaShooterDelegate {
+  public func aromaShooter(didDiscoverDevice device: AromaShooterControllerSwift.AromaShooter)
+  public func aromaShooter(didConnectDevice device: AromaShooterControllerSwift.AromaShooter)
+  public func aromaShooter(didDisconnectDevice device: AromaShooterControllerSwift.AromaShooter)
+}
+extension ASConnectionViewController {
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+public struct AromaShooter {
+  public var peripheral: CoreBluetooth.CBPeripheral {
+    get
+  }
+  public var name: Swift.String? {
+    get
+  }
+}
+public protocol AromaShooterDelegate : AnyObject {
+  func aromaShooter(didDiscoverDevice device: AromaShooterControllerSwift.AromaShooter)
+  func aromaShooter(didConnectDevice device: AromaShooterControllerSwift.AromaShooter)
+  func aromaShooter(didDisconnectDevice device: AromaShooterControllerSwift.AromaShooter)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AromaShooterController : ObjectiveC.NSObject, CoreBluetooth.CBCentralManagerDelegate, CoreBluetooth.CBPeripheralDelegate {
+  public static var sharedInstance: AromaShooterControllerSwift.AromaShooterController
+  public var connectedDevices: [AromaShooterControllerSwift.AromaShooter]
+  weak public var delegate: AromaShooterControllerSwift.AromaShooterDelegate?
+  public func startScanning()
+  public func stopScanning()
+  public func connect(aromaShooters: [AromaShooterControllerSwift.AromaShooter])
+  public func disconnect(aromaShooter: AromaShooterControllerSwift.AromaShooter)
+  @objc public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: Swift.Error?)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: Swift.Error?)
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: Swift.Error?)
+  @objc deinit
+}
+extension AromaShooterController {
+  public func diffuse(aromaShooter: AromaShooterControllerSwift.AromaShooter, duration: Swift.Int, booster: Swift.Bool, port: Swift.Int)
+  public func diffuse(aromaShooter: AromaShooterControllerSwift.AromaShooter, duration: Swift.Int, booster: Swift.Bool, ports: [Swift.Int])
+  public func diffuse(aromaShooters: [AromaShooterControllerSwift.AromaShooter], duration: Swift.Int, booster: Swift.Bool, port: Swift.Int)
+  public func diffuse(aromaShooters: [AromaShooterControllerSwift.AromaShooter], duration: Swift.Int, booster: Swift.Bool, ports: [Swift.Int])
+  public func diffuseAll(duration: Swift.Int, booster: Swift.Bool, ports: [Swift.Int])
+  public func stopAll()
+  public func stop(aromaShooter: AromaShooterControllerSwift.AromaShooter)
+}
+extension AromaShooterController {
+  public func getConnectionViewController() -> UIKit.UIViewController?
+}
+extension AromaShooterController {
+  public func diffuse(aromaShooters: [AromaShooterControllerSwift.AromaShooter], durationInMilli: Swift.Int, boosterIntensity: Swift.Int, fanIntensity: Swift.Int, ports: [AromaShooterControllerSwift.CartridgePort])
+  public func diffuseAll(durationInMilli: Swift.Int, boosterIntensity: Swift.Int, fanIntensity: Swift.Int, ports: [AromaShooterControllerSwift.CartridgePort])
+  public func stopAllWithIntensity()
+  public func stopWithIntensity(aromaShooter: AromaShooterControllerSwift.AromaShooter)
+}
+extension AromaShooterController {
+  public func diffuseAromaFlower(aromaShooters: [AromaShooterControllerSwift.AromaShooter], durationInMilli: Swift.Int, boosterIntensity: Swift.Int, ports: [AromaShooterControllerSwift.CartridgePort])
+  public func diffuseAromaFlowerAll(durationInMilli: Swift.Int, boosterIntensity: Swift.Int, ports: [AromaShooterControllerSwift.CartridgePort])
+}

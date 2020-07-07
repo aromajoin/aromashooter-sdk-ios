@@ -1,5 +1,5 @@
 # Change log
-Version 1.2.2 (Oct 9, 2019)
+Version 1.3.0 (Oct 9, 2019)
 ---
 - Work with AS2 AromaShooter Device
 - Add new diffuse method for AS2 AromaShooter Device

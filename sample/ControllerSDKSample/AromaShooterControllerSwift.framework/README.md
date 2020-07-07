@@ -14,7 +14,7 @@ The binary file, sample, and documentation is distributed on a separate [Github 
  
  ## Usage
  
- ## AS1 AromaShooter Device. Method from AS1 only work with AS1 AromaShooter Device
+ ## AromaShooter Device. These Methods work with both AS1 and AS2
  
  ### Get Controller references
  * Import Controller module
@@ -62,7 +62,7 @@ The binary file, sample, and documentation is distributed on a separate [Github 
  constroller.stopAll()
  ```
  
- ## AS2 AromaShooter Device. Note: Method from AS1 can also be use with AS2 AromaShooter device
+ ## AS2 AromaShooter Device. These Methods only work with AS2
  
  ### Diffuse scents. 
  * Diffuse scents of all connected devices  
