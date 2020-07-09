@@ -33,7 +33,7 @@
 ### Get Controller references
 * Import Controller module
 ```swift
-import AromaShooterControlerSwift
+import AromaShooterControllerSwift
 ```
 * Get the Controller class reference
 ```swift
