@@ -6,6 +6,8 @@
 
 **[Aroma Shooter](https://aromajoin.com/products/aroma-shooter)との通信に使用されるAromaShooterController SDKのiOS版です。**  
 
+このプロセスの[デモビデオ](https://youtu.be/MepAhofA9PE)をご覧ください。
+
 # 目次
 1. [対応デバイス](#対応デバイス)
 2. [前提条件](#前提条件)
