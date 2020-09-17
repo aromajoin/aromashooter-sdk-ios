@@ -5,7 +5,6 @@
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 **The iOS version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/products/aroma-shooter)**.
-Watch a [video walkthrough](https://youtu.be/MepAhofA9PE) of this process to simplify your life.
 
 # Table of Contents
 1. [Supported devices](#supported-devices)  
@@ -28,6 +27,8 @@ Watch a [video walkthrough](https://youtu.be/MepAhofA9PE) of this process to sim
 ## Installation  
 * Download the [framework file at the release page](https://github.com/aromajoin/controller-sdk-ios/releases).  
 * Drag and drop it into your project. (Make sure that it is added in *Embedded Binaries section* in your project's target page).
+
+Watch a [video walkthrough](https://youtu.be/MepAhofA9PE) of this process to simplify your life.
 
 ## Usage
 
