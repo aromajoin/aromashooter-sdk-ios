@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 **The iOS version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/products/aroma-shooter)**.
+Watch a [video walkthrough](https://youtu.be/MepAhofA9PE) of this process to simplify your life.
 
 # Table of Contents
 1. [Supported devices](#supported-devices)  
