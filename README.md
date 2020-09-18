@@ -28,6 +28,8 @@
 * Download the [framework file at the release page](https://github.com/aromajoin/controller-sdk-ios/releases).  
 * Drag and drop it into your project. (Make sure that it is added in *Embedded Binaries section* in your project's target page).
 
+Watch a [video walkthrough](https://youtu.be/MepAhofA9PE) of this process to simplify your life.
+
 ## Usage
 
 ### Get Controller references

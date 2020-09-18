@@ -28,6 +28,8 @@
 * [リリースページのフレームワークファイル](https://github.com/aromajoin/controller-sdk-ios/releases)をダウンロードする。
 * プロジェクトにドラッグ＆ドロップします。 （プロジェクトのターゲットページの*Embedded Binariesセクション*に追加されていることを確認してください）。
 
+このプロセスの[デモビデオ](https://youtu.be/MepAhofA9PE)をご覧ください。
+
 ## 使用法
 
 ### Controllerリファレンスを取得する
