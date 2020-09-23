@@ -32,6 +32,14 @@
 
 ## 使用法
 
+### Bluetoothの使用法の説明を`Info.plist`ファイルに追加する
+iOS 13以降では、Bluetoothの使用法の説明を追加する必要があります。追加しない場合、アプリがクラッシュします。
+キーとその値をアプリの `Info.plist`ファイルに追加してください。
+```xml
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>The app uses Bluetooth to connect to Aroma Shooter</string>
+```
+
 ### Controllerリファレンスを取得する
 * Controllerモジュールのインポート
 ```swift
