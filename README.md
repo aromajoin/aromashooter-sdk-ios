@@ -32,6 +32,14 @@ Watch a [video walkthrough](https://youtu.be/MepAhofA9PE) of this process to sim
 
 ## Usage
 
+### Add Bluetooth usage description to `Info.plist` file
+From iOS 13 and later, it is required to add the Bluetooth usage description, if not the app will be crashed.
+So, please add the key and its value to the app's `Info.plist` file.
+```xml
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>The app uses Bluetooth to connect to Aroma Shooter</string>
+```
+
 ### Get Controller references
 * Import Controller module
 ```swift
