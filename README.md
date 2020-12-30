@@ -42,6 +42,8 @@ So, please add the key and its value to the app's `Info.plist` file.
 <string>The app uses Bluetooth to connect to Aroma Shooter</string>
 ```
 
+Besides, if you get the "Target Integrity" in XCode 12.3, please check out the solution [here](https://github.com/aromajoin/controller-sdk-ios/issues/5).
+
 ### Get Controller references
 * Import Controller module
 ```swift
