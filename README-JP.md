@@ -41,6 +41,8 @@ iOS 13以降では、Bluetoothの使用法の説明を追加する必要があ�
 <string>The app uses Bluetooth to connect to Aroma Shooter</string>
 ```
 
+また、XCode 12.3で「TargetIntegrity」を取得した場合は、ソリューション[こちら](https://github.com/aromajoin/controller-sdk-ios/issues/5)を確認してください。
+
 ### Controllerリファレンスを取得する
 * Controllerモジュールのインポート
 ```swift
