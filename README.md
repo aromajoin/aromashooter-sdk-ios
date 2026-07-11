@@ -2,11 +2,14 @@
 
 # Controller SDK for iOS
 
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/controller-sdk-ios/releases)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html) 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/aromajoin-software/)
 
 
 **The iOS version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/products/aroma-shooter)**.
+
+> **v2.0.0 is a breaking release.** The `diffuse*` methods are renamed to `shoot*`, the `CartridgePort` model becomes `AromaChamber` (`intensityPercent` → `concentration`), and the `booster`/`fan` parameters become `internalBooster`/`externalBooster`. See the [CHANGELOG](sample/ControllerSDKSample/AromaShooterControllerSwift.framework/CHANGELOG.md).
 
 # Table of Contents
 1. [Supported devices](#supported-devices)  
@@ -15,8 +18,8 @@
 4. [Usage](#usage)
     * [Connect/Disconnect devices](#connectdisconnect-devices)
     * [Get connected devices](#get-connected-devices)
-    * [Diffuse scents](#diffuse-scents)
-    * [Stop diffusing](#stop)
+    * [Shoot scents](#shoot-scents)
+    * [Stop shooting](#stop)
 5. [License](#license)
 
 ## Supported devices
@@ -75,26 +78,28 @@ if let connectionVC = connectionVC {
 ```swift
 let connectedDevices = controller.connectedDevices
 ```  
-### Diffuse scents
-* Diffuse scents of all connected devices  
-```swift
-controller.diffuseAll(duration: 3000, booster: true, ports: [1, 2, 3])
-```  
-* Diffuse scents of specific devices  
-```swift
-controller.diffuse(aromaShooters: devices, duration: 3000, booster: true, port: [1, 2, 3])
-```  
-* Diffuse scents method for AS2 (AromaShooter 2) devices only
-```swift
-controller.diffuseAll(durationInMilli: 1000, boosterIntensity: 0, fanIntensity: 50, ports: [CartridgePort(number: 3, intensityPercent: 100)])
+### Shoot scents
+> **Note:** the internal booster must be enabled for any scent to emit — pass `internalBooster: true` (simple) or `internalBoosterIntensity > 0` (with intensity). If it is off, nothing comes out. The external booster (`externalBoosterIntensity`, formerly "fan") exists on AS3 only.
 
-controller.diffuse(aromaShooters: controller.connectedDevices, durationInMilli: 1000, boosterIntensity: 50, fanIntensity: 40, ports: [CartridgePort(number: 3, intensityPercent: 100)])
+* Shoot scents of all connected devices  
+```swift
+controller.shootAllSimple(duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+```  
+* Shoot scents of specific devices  
+```swift
+controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+```  
+* Shoot scents method for AS2 (AromaShooter 2) devices only
+```swift
+controller.shootAllWithIntensity(durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
+
+controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 40, chambers: [AromaChamber(number: 3, concentration: 100)])
 ``` 
 
-### Stop diffusing
-Stop all ports of current connected devices if they have been diffusing 
+### Stop shooting
+Stop all chambers of current connected devices if they have been shooting 
 ```swift
-controller.stopAll();
+controller.stopAllSimple();
 ```
 
 **For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/controller-sdk-ios/tree/master/sample).**  

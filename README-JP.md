@@ -2,10 +2,13 @@
 
 # ControllerSDK - iOS版
 
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/controller-sdk-ios/releases)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html) 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/aromajoin-software/)
 
 **[Aroma Shooter](https://aromajoin.com/products/aroma-shooter)との通信に使用されるAromaShooterController SDKのiOS版です。**  
+
+> **v2.0.0は破壊的変更を含むリリースです。** `diffuse*` メソッドは `shoot*` に、モデル `CartridgePort` は `AromaChamber`（`intensityPercent` → `concentration`）に、`booster`/`fan` パラメータは `internalBooster`/`externalBooster` に名称変更されました。
 
 # 目次
 1. [対応デバイス](#対応デバイス)
@@ -75,31 +78,33 @@ if let connectionVC = connectionVC {
 let connectedDevices = controller.connectedDevices
 ```  
 ### 香りを噴射する
+> **注意:** 香りが出るには内部ブースターを有効にする必要があります — `internalBooster: true`（シンプル）または `internalBoosterIntensity > 0`（強度指定）を指定してください。オフの場合は何も噴射されません。外部ブースター（`externalBoosterIntensity`、旧「fan」）はAS3のみに存在します。
+
 * 接続されているすべてのデバイスに香りを噴射する。
 ```swift
 /**
- * @param duration     噴射持続時間（ミリ秒）。
- * @param booster      ブースターが使用されているかどうかを判定する。(true: より強く噴射する, false: より弱く噴射する)
- * @param ports        カートリッジ番号を噴射する。値：1 ~ 6.
+ * @param duration        噴射持続時間（ミリ秒）。
+ * @param internalBooster 内部ブースターを有効にするかどうか。(true: より強く噴射する, false: より弱く噴射する)
+ * @param chambers        噴射するチャンバー番号。値：1 ~ 6.
  */
-controller.diffuseAll(duration: 3000, booster: true, ports: [1, 2, 3])
+controller.shootAllSimple(duration: 3000, internalBooster: true, chambers: [1, 2, 3])
 ```  
 * 特定のデバイスに香りを噴射する。
 ```swift
-controller.diffuse(aromaShooters: devices, duration: 3000, booster: true, port: [1, 2, 3])
+controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chambers: [1, 2, 3])
 ```  
 
-* AS2（Aroma Shooter 2）デバイスのみのディフューザー香りメソッド
+* AS2（Aroma Shooter 2）デバイスのみの強度指定噴射メソッド
 ```swift
-controller.diffuseAll(durationInMilli: 1000, boosterIntensity: 0, fanIntensity: 50, ports: [CartridgePort(number: 3, intensityPercent: 100)])
+controller.shootAllWithIntensity(durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
 
-controller.diffuse(aromaShooters: controller.connectedDevices, durationInMilli: 1000, boosterIntensity: 50, fanIntensity: 40, ports: [CartridgePort(number: 3, intensityPercent: 100)])
+controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 40, chambers: [AromaChamber(number: 3, concentration: 100)])
 ``` 
 
 ### 噴射を止める
-噴射している場合は、接続されているデバイスのすべてのポートを停止します。
+噴射している場合は、接続されているデバイスのすべてのチャンバーを停止します。
 ```swift
-constroller.stopAll()
+controller.stopAllSimple()
 ```
 
 **詳細については、このリポジトリをチェックアウトし、
