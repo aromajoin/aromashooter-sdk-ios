@@ -3,7 +3,7 @@
 //
 
 import UIKit
-import AromaShooterControllerSwift
+import AromaShooterSwiftSDK
 
 class ViewController: UIViewController {
   let aromaShooterController = AromaShooterController.sharedInstance

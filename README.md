@@ -1,15 +1,15 @@
-[English](https://github.com/aromajoin/controller-sdk-ios) / [日本語](README-JP.md)
+[English](https://github.com/aromajoin/aromashooter-sdk-ios) / [日本語](README-JP.md)
 
 # Aroma Shooter SDK (iOS)
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/controller-sdk-ios/releases)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/aromashooter-sdk-ios/releases)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html) 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/aromajoin-software/)
 
 
 **The iOS version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/products/aroma-shooter)**.
 
-> **v2.0.0 is a breaking release.** The `diffuse*` methods are renamed to `shoot*`, the `CartridgePort` model becomes `AromaChamber` (`intensityPercent` → `concentration`), and the `booster`/`fan` parameters become `internalBooster`/`externalBooster`. See the [CHANGELOG](sample/ControllerSDKSample/AromaShooterControllerSwift.framework/CHANGELOG.md).
+> **v2.0.0 is a breaking release.** The `diffuse*` methods are renamed to `shoot*`, the `CartridgePort` model becomes `AromaChamber` (`intensityPercent` → `concentration`), and the `booster`/`fan` parameters become `internalBooster`/`externalBooster`. See the [CHANGELOG](sample/ControllerSDKSample/AromaShooterSwiftSDK.framework/CHANGELOG.md).
 
 # Table of Contents
 1. [Supported devices](#supported-devices)  
@@ -30,7 +30,7 @@
 * Swift version: >= 3.0
 
 ## Installation  
-* Download the [framework file at the release page](https://github.com/aromajoin/controller-sdk-ios/releases).  
+* Download the [framework file at the release page](https://github.com/aromajoin/aromashooter-sdk-ios/releases).  
 * Drag and drop it into your project. (Make sure that it is added in *Embedded Binaries section* in your project's target page).
 
 Watch a [video walkthrough](https://youtu.be/MepAhofA9PE) of this process to simplify your life.
@@ -45,12 +45,12 @@ So, please add the key and its value to the app's `Info.plist` file.
 <string>The app uses Bluetooth to connect to Aroma Shooter</string>
 ```
 
-Besides, if you get the "Target Integrity" in XCode 12.3, please check out the solution [here](https://github.com/aromajoin/controller-sdk-ios/issues/5).
+Besides, if you get the "Target Integrity" in XCode 12.3, please check out the solution [here](https://github.com/aromajoin/aromashooter-sdk-ios/issues/5).
 
 ### Get Controller references
 * Import Controller module
 ```swift
-import AromaShooterControllerSwift
+import AromaShooterSwiftSDK
 ```
 * Get the Controller class reference
 ```swift
@@ -102,8 +102,8 @@ Stop all chambers of current connected devices if they have been shooting
 controller.stopAllSimple();
 ```
 
-**For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/controller-sdk-ios/tree/master/sample).**  
-**If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/controller-sdk-ios/issues).** 
+**For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/aromashooter-sdk-ios/tree/master/sample).**  
+**If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/aromashooter-sdk-ios/issues).** 
 
 ## License
 Please check the [LICENSE](/LICENSE.md) file for the details.
