@@ -31,7 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CEBA38D71E5AF0D500FD56A0 /* ControllerSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBA38D71E5AF0D500FD56A0 /* AromaShooterSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AromaShooterSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBA38DA1E5AF0D500FD56A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBA38DC1E5AF0D500FD56A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEBA38DF1E5AF0D500FD56A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E348873B24E616FA003FF981 /* AromaShooterSwiftSDK.xcframework */,
-				CEBA38D91E5AF0D500FD56A0 /* ControllerSDKSample */,
+				CEBA38D91E5AF0D500FD56A0 /* AromaShooterSDKSample */,
 				CEBA38D81E5AF0D500FD56A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,12 +65,12 @@
 		CEBA38D81E5AF0D500FD56A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA38D71E5AF0D500FD56A0 /* ControllerSDKSample.app */,
+				CEBA38D71E5AF0D500FD56A0 /* AromaShooterSDKSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEBA38D91E5AF0D500FD56A0 /* ControllerSDKSample */ = {
+		CEBA38D91E5AF0D500FD56A0 /* AromaShooterSDKSample */ = {
 			isa = PBXGroup;
 			children = (
 				CEBA38DA1E5AF0D500FD56A0 /* AppDelegate.swift */,
@@ -80,15 +80,15 @@
 				CEBA38E31E5AF0D500FD56A0 /* LaunchScreen.storyboard */,
 				CEBA38E61E5AF0D500FD56A0 /* Info.plist */,
 			);
-			path = ControllerSDKSample;
+			path = AromaShooterSDKSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEBA38D61E5AF0D500FD56A0 /* ControllerSDKSample */ = {
+		CEBA38D61E5AF0D500FD56A0 /* AromaShooterSDKSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEBA38E91E5AF0D500FD56A0 /* Build configuration list for PBXNativeTarget "ControllerSDKSample" */;
+			buildConfigurationList = CEBA38E91E5AF0D500FD56A0 /* Build configuration list for PBXNativeTarget "AromaShooterSDKSample" */;
 			buildPhases = (
 				CEBA38D31E5AF0D500FD56A0 /* Sources */,
 				CEBA38D41E5AF0D500FD56A0 /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = ControllerSDKSample;
-			productName = ControllerSDKSample;
-			productReference = CEBA38D71E5AF0D500FD56A0 /* ControllerSDKSample.app */;
+			name = AromaShooterSDKSample;
+			productName = AromaShooterSDKSample;
+			productReference = CEBA38D71E5AF0D500FD56A0 /* AromaShooterSDKSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CEBA38D21E5AF0D500FD56A0 /* Build configuration list for PBXProject "ControllerSDKSample" */;
+			buildConfigurationList = CEBA38D21E5AF0D500FD56A0 /* Build configuration list for PBXProject "AromaShooterSDKSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -135,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEBA38D61E5AF0D500FD56A0 /* ControllerSDKSample */,
+				CEBA38D61E5AF0D500FD56A0 /* AromaShooterSDKSample */,
 			);
 		};
 /* End PBXProject section */
@@ -306,10 +306,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = ControllerSDKSample/Info.plist;
+				INFOPLIST_FILE = AromaShooterSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aromajoin.ControllerSDKSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aromajoin.AromaShooterSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
@@ -328,10 +328,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = ControllerSDKSample/Info.plist;
+				INFOPLIST_FILE = AromaShooterSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aromajoin.ControllerSDKSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aromajoin.AromaShooterSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
@@ -343,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEBA38D21E5AF0D500FD56A0 /* Build configuration list for PBXProject "ControllerSDKSample" */ = {
+		CEBA38D21E5AF0D500FD56A0 /* Build configuration list for PBXProject "AromaShooterSDKSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEBA38E71E5AF0D500FD56A0 /* Debug */,
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEBA38E91E5AF0D500FD56A0 /* Build configuration list for PBXNativeTarget "ControllerSDKSample" */ = {
+		CEBA38E91E5AF0D500FD56A0 /* Build configuration list for PBXNativeTarget "AromaShooterSDKSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEBA38EA1E5AF0D500FD56A0 /* Debug */,
