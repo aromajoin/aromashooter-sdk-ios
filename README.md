@@ -74,6 +74,28 @@ if let connectionVC = connectionVC {
 }
 ```
 
+#### Manual connection (custom UI)
+If you build your own device list instead of the built-in screen, drive the scan/connect flow directly and receive results through `AromaShooterDelegate`.
+```swift
+class MyManager: AromaShooterDelegate {
+  let controller = AromaShooterController.sharedInstance
+
+  init() { controller.delegate = self }
+
+  func startDiscovery() { controller.startScanning() }
+  func stopDiscovery()  { controller.stopScanning() }
+
+  // AromaShooterDelegate
+  func aromaShooter(didDiscoverDevice device: AromaShooter) { /* add to your list */ }
+  func aromaShooter(didConnectDevice device: AromaShooter) { /* update UI */ }
+  func aromaShooter(didDisconnectDevice device: AromaShooter) { /* update UI */ }
+}
+
+// Connect / disconnect discovered devices
+controller.connect(aromaShooters: [device])
+controller.disconnect(aromaShooter: device)
+```
+
 ### Get connected devices
 ```swift
 let connectedDevices = controller.connectedDevices
@@ -81,25 +103,41 @@ let connectedDevices = controller.connectedDevices
 ### Shoot scents
 > **Note:** the internal booster must be enabled for any scent to emit — pass `internalBooster: true` (simple) or `internalBoosterIntensity > 0` (with intensity). If it is off, nothing comes out. The external booster (`externalBoosterIntensity`, formerly "fan") exists on AS3 only.
 
-* Shoot scents of all connected devices  
+**Simple mode (AS1 / AS2)** — chambers on/off, no per-chamber intensity:
 ```swift
+// All connected devices, multiple chambers
 controller.shootAllSimple(duration: 3000, internalBooster: true, chambers: [1, 2, 3])
-```  
-* Shoot scents of specific devices  
-```swift
+
+// Specific devices, multiple chambers
 controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chambers: [1, 2, 3])
-```  
-* Shoot scents method for AS2 (AromaShooter 2) devices only
+
+// A single chamber (one device, or several)
+controller.shootSimple(aromaShooter: device, duration: 3000, internalBooster: true, chamber: 1)
+controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chamber: 1)
+
+// One device, multiple chambers
+controller.shootSimple(aromaShooter: device, duration: 3000, internalBooster: true, chambers: [1, 2])
+```
+
+**Intensity mode (AS2 / AS3)** — per-chamber concentration + internal/external booster (external booster is AS3 only):
 ```swift
+// All connected devices
 controller.shootAllWithIntensity(durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
 
+// Specific devices
 controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 40, chambers: [AromaChamber(number: 3, concentration: 100)])
-``` 
+```
 
 ### Stop shooting
-Stop all chambers of current connected devices if they have been shooting 
+Stop all chambers of the connected devices while they are shooting.
 ```swift
-controller.stopAllSimple();
+// Simple mode — all devices / a specific device
+controller.stopAllSimple()
+controller.stopSimple(aromaShooter: device)
+
+// Intensity mode (AS2 / AS3) — all devices / a specific device
+controller.stopAllWithIntensity()
+controller.stopWithIntensity(aromaShooter: device)
 ```
 
 **For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/aromashooter-sdk-ios/tree/master/sample).**  

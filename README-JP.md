@@ -73,6 +73,28 @@ if let connectionVC = connectionVC {
 }
 ```
 
+#### 手動接続（カスタムUI）
+組み込みの接続画面の代わりに独自のデバイス一覧を作る場合は、スキャン・接続を直接呼び出し、結果を `AromaShooterDelegate` で受け取ります。
+```swift
+class MyManager: AromaShooterDelegate {
+  let controller = AromaShooterController.sharedInstance
+
+  init() { controller.delegate = self }
+
+  func startDiscovery() { controller.startScanning() }
+  func stopDiscovery()  { controller.stopScanning() }
+
+  // AromaShooterDelegate
+  func aromaShooter(didDiscoverDevice device: AromaShooter) { /* 一覧に追加 */ }
+  func aromaShooter(didConnectDevice device: AromaShooter) { /* UI更新 */ }
+  func aromaShooter(didDisconnectDevice device: AromaShooter) { /* UI更新 */ }
+}
+
+// 発見したデバイスの接続 / 切断
+controller.connect(aromaShooters: [device])
+controller.disconnect(aromaShooter: device)
+```
+
 ### 接続されたデバイス
 ```swift
 let connectedDevices = controller.connectedDevices
@@ -80,31 +102,46 @@ let connectedDevices = controller.connectedDevices
 ### 香りを噴射する
 > **注意:** 香りが出るには内部ブースターを有効にする必要があります — `internalBooster: true`（シンプル）または `internalBoosterIntensity > 0`（強度指定）を指定してください。オフの場合は何も噴射されません。外部ブースター（`externalBoosterIntensity`、旧「fan」）はAS3のみに存在します。
 
-* 接続されているすべてのデバイスに香りを噴射する。
+**シンプルモード（AS1 / AS2）** — チャンバーのオン/オフのみ、強度指定なし:
 ```swift
 /**
  * @param duration        噴射持続時間（ミリ秒）。
  * @param internalBooster 内部ブースターを有効にするかどうか。(true: より強く噴射する, false: より弱く噴射する)
  * @param chambers        噴射するチャンバー番号。値：1 ~ 6.
  */
+// 接続中の全デバイス・複数チャンバー
 controller.shootAllSimple(duration: 3000, internalBooster: true, chambers: [1, 2, 3])
-```  
-* 特定のデバイスに香りを噴射する。
-```swift
-controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chambers: [1, 2, 3])
-```  
 
-* AS2（Aroma Shooter 2）デバイスのみの強度指定噴射メソッド
+// 特定のデバイス・複数チャンバー
+controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+
+// 単一チャンバー（1台または複数台）
+controller.shootSimple(aromaShooter: device, duration: 3000, internalBooster: true, chamber: 1)
+controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chamber: 1)
+
+// 1台・複数チャンバー
+controller.shootSimple(aromaShooter: device, duration: 3000, internalBooster: true, chambers: [1, 2])
+```
+
+**強度指定モード（AS2 / AS3）** — チャンバーごとの濃度 + 内部/外部ブースター（外部ブースターはAS3のみ）:
 ```swift
+// 接続中の全デバイス
 controller.shootAllWithIntensity(durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
 
+// 特定のデバイス
 controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 40, chambers: [AromaChamber(number: 3, concentration: 100)])
-``` 
+```
 
 ### 噴射を止める
-噴射している場合は、接続されているデバイスのすべてのチャンバーを停止します。
+噴射中のデバイスの全チャンバーを停止します。
 ```swift
+// シンプルモード — 全デバイス / 特定デバイス
 controller.stopAllSimple()
+controller.stopSimple(aromaShooter: device)
+
+// 強度指定モード（AS2 / AS3）— 全デバイス / 特定デバイス
+controller.stopAllWithIntensity()
+controller.stopWithIntensity(aromaShooter: device)
 ```
 
 **詳細については、このリポジトリをチェックアウトし、
