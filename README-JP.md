@@ -25,12 +25,12 @@
 * Aroma Shooter Bluetoothタイプ
 
 ## 前提条件
-* iOS版: >= 8.0
-* Swift版: >= 3.0
+* iOS版: >= 12.0
+* Swift版: >= 5.0
 
 ## インストール  
-* [リリースページのフレームワークファイル](https://github.com/aromajoin/aromashooter-sdk-ios/releases)をダウンロードする。
-* プロジェクトにドラッグ＆ドロップします。 （プロジェクトのターゲットページの*Embedded Binariesセクション*に追加されていることを確認してください）。
+* [リリースページの `AromaShooterSwiftSDK.xcframework`](https://github.com/aromajoin/aromashooter-sdk-ios/releases)をダウンロードする。
+* プロジェクトにドラッグ＆ドロップし、ターゲットの*General → Frameworks, Libraries, and Embedded Content*で**Embed & Sign**に設定してください。
 
 このプロセスの[デモビデオ](https://youtu.be/MepAhofA9PE)をご覧ください。
 

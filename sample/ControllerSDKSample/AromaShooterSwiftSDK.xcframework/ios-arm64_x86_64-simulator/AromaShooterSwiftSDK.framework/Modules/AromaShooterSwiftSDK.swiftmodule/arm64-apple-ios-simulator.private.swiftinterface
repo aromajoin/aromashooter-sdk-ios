@@ -1,0 +1,118 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AromaShooterSwiftSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+@_exported import AromaShooterSwiftSDK
+import CoreBluetooth
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct AromaChamber {
+  public let number: Swift.Int
+  public let concentration: Swift.Int
+  public init(number: Swift.Int, concentration: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class DeviceTableViewCell : UIKit.UITableViewCell {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ASConnectionViewController : UIKit.UITableViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableView.Style)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+}
+extension AromaShooterSwiftSDK.ASConnectionViewController : AromaShooterSwiftSDK.AromaShooterDelegate {
+  @_Concurrency.MainActor @preconcurrency public func aromaShooter(didDiscoverDevice device: AromaShooterSwiftSDK.AromaShooter)
+  @_Concurrency.MainActor @preconcurrency public func aromaShooter(didConnectDevice device: AromaShooterSwiftSDK.AromaShooter)
+  @_Concurrency.MainActor @preconcurrency public func aromaShooter(didDisconnectDevice device: AromaShooterSwiftSDK.AromaShooter)
+}
+extension AromaShooterSwiftSDK.ASConnectionViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+public struct AromaShooter {
+  public var peripheral: CoreBluetooth.CBPeripheral {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var name: Swift.String? {
+    get
+  }
+  #endif
+}
+public protocol AromaShooterDelegate : AnyObject {
+  func aromaShooter(didDiscoverDevice device: AromaShooterSwiftSDK.AromaShooter)
+  func aromaShooter(didConnectDevice device: AromaShooterSwiftSDK.AromaShooter)
+  func aromaShooter(didDisconnectDevice device: AromaShooterSwiftSDK.AromaShooter)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AromaShooterController : ObjectiveC.NSObject, CoreBluetooth.CBCentralManagerDelegate, CoreBluetooth.CBPeripheralDelegate {
+  public static let sharedInstance: AromaShooterSwiftSDK.AromaShooterController
+  public var connectedDevices: [AromaShooterSwiftSDK.AromaShooter]
+  weak public var delegate: (any AromaShooterSwiftSDK.AromaShooterDelegate)?
+  public func startScanning()
+  public func stopScanning()
+  public func connect(aromaShooters: [AromaShooterSwiftSDK.AromaShooter])
+  public func disconnect(aromaShooter: AromaShooterSwiftSDK.AromaShooter)
+  @objc public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: (any Swift.Error)?)
+  #endif
+  @objc deinit
+}
+extension AromaShooterSwiftSDK.AromaShooterController {
+  public func shootSimple(aromaShooter: AromaShooterSwiftSDK.AromaShooter, duration: Swift.Int, internalBooster: Swift.Bool, chamber: Swift.Int)
+  public func shootSimple(aromaShooter: AromaShooterSwiftSDK.AromaShooter, duration: Swift.Int, internalBooster: Swift.Bool, chambers: [Swift.Int])
+  public func shootSimple(aromaShooters: [AromaShooterSwiftSDK.AromaShooter], duration: Swift.Int, internalBooster: Swift.Bool, chamber: Swift.Int)
+  public func shootSimple(aromaShooters: [AromaShooterSwiftSDK.AromaShooter], duration: Swift.Int, internalBooster: Swift.Bool, chambers: [Swift.Int])
+  public func shootAllSimple(duration: Swift.Int, internalBooster: Swift.Bool, chambers: [Swift.Int])
+  public func stopAllSimple()
+  public func stopSimple(aromaShooter: AromaShooterSwiftSDK.AromaShooter)
+}
+extension AromaShooterSwiftSDK.AromaShooterController {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getConnectionViewController() -> UIKit.UIViewController?
+  #endif
+}
+extension AromaShooterSwiftSDK.AromaShooterController {
+  public func shootWithIntensity(aromaShooters: [AromaShooterSwiftSDK.AromaShooter], durationInMilli: Swift.Int, internalBoosterIntensity: Swift.Int, externalBoosterIntensity: Swift.Int, chambers: [AromaShooterSwiftSDK.AromaChamber])
+  public func shootAllWithIntensity(durationInMilli: Swift.Int, internalBoosterIntensity: Swift.Int, externalBoosterIntensity: Swift.Int, chambers: [AromaShooterSwiftSDK.AromaChamber])
+  public func stopAllWithIntensity()
+  public func stopWithIntensity(aromaShooter: AromaShooterSwiftSDK.AromaShooter)
+}
+extension AromaShooterSwiftSDK.AromaShooterController {
+  public func shootAromaFlower(aromaShooters: [AromaShooterSwiftSDK.AromaShooter], durationInMilli: Swift.Int, internalBoosterIntensity: Swift.Int, chambers: [AromaShooterSwiftSDK.AromaChamber])
+  public func shootAromaFlowerAll(durationInMilli: Swift.Int, internalBoosterIntensity: Swift.Int, chambers: [AromaShooterSwiftSDK.AromaChamber])
+}

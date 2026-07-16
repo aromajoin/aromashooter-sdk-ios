@@ -12,8 +12,8 @@
 		CEBA38E01E5AF0D500FD56A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBA38DE1E5AF0D500FD56A0 /* Main.storyboard */; };
 		CEBA38E21E5AF0D500FD56A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBA38E11E5AF0D500FD56A0 /* Assets.xcassets */; };
 		CEBA38E51E5AF0D500FD56A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBA38E31E5AF0D500FD56A0 /* LaunchScreen.storyboard */; };
-		E348873D24E61700003FF981 /* AromaShooterControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348873B24E616FA003FF981 /* AromaShooterControllerSwift.framework */; };
-		E348873E24E61700003FF981 /* AromaShooterControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E348873B24E616FA003FF981 /* AromaShooterControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E348873D24E61700003FF981 /* AromaShooterSwiftSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348873B24E616FA003FF981 /* AromaShooterSwiftSDK.xcframework */; };
+		E348873E24E61700003FF981 /* AromaShooterSwiftSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E348873B24E616FA003FF981 /* AromaShooterSwiftSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E348873E24E61700003FF981 /* AromaShooterControllerSwift.framework in Embed Frameworks */,
+				E348873E24E61700003FF981 /* AromaShooterSwiftSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +38,7 @@
 		CEBA38E11E5AF0D500FD56A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBA38E41E5AF0D500FD56A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBA38E61E5AF0D500FD56A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E348873B24E616FA003FF981 /* AromaShooterControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AromaShooterControllerSwift.framework; sourceTree = "<group>"; };
+		E348873B24E616FA003FF981 /* AromaShooterSwiftSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AromaShooterSwiftSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E348873D24E61700003FF981 /* AromaShooterControllerSwift.framework in Frameworks */,
+				E348873D24E61700003FF981 /* AromaShooterSwiftSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		CEBA38CE1E5AF0D500FD56A0 = {
 			isa = PBXGroup;
 			children = (
-				E348873B24E616FA003FF981 /* AromaShooterControllerSwift.framework */,
+				E348873B24E616FA003FF981 /* AromaShooterSwiftSDK.xcframework */,
 				CEBA38D91E5AF0D500FD56A0 /* ControllerSDKSample */,
 				CEBA38D81E5AF0D500FD56A0 /* Products */,
 			);
@@ -234,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -307,7 +307,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ControllerSDKSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aromajoin.ControllerSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,7 +329,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ControllerSDKSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aromajoin.ControllerSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

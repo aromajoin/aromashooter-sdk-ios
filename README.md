@@ -9,7 +9,7 @@
 
 **The iOS version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/products/aroma-shooter)**.
 
-> **v2.0.0 is a breaking release.** The `diffuse*` methods are renamed to `shoot*`, the `CartridgePort` model becomes `AromaChamber` (`intensityPercent` → `concentration`), and the `booster`/`fan` parameters become `internalBooster`/`externalBooster`. See the [CHANGELOG](sample/ControllerSDKSample/AromaShooterSwiftSDK.framework/CHANGELOG.md).
+> **v2.0.0 is a breaking release.** The `diffuse*` methods are renamed to `shoot*`, the `CartridgePort` model becomes `AromaChamber` (`intensityPercent` → `concentration`), and the `booster`/`fan` parameters become `internalBooster`/`externalBooster`. See the [CHANGELOG](sample/ControllerSDKSample/AromaShooterSwiftSDK.xcframework/ios-arm64/AromaShooterSwiftSDK.framework/CHANGELOG.md).
 
 # Table of Contents
 1. [Supported devices](#supported-devices)  
@@ -26,12 +26,12 @@
 * Aroma Shooter Bluetooth version 
 
 ## Prerequisites
-* iOS version: >= 8.0
-* Swift version: >= 3.0
+* iOS version: >= 12.0
+* Swift version: >= 5.0
 
 ## Installation  
-* Download the [framework file at the release page](https://github.com/aromajoin/aromashooter-sdk-ios/releases).  
-* Drag and drop it into your project. (Make sure that it is added in *Embedded Binaries section* in your project's target page).
+* Download the [`AromaShooterSwiftSDK.xcframework` at the release page](https://github.com/aromajoin/aromashooter-sdk-ios/releases).  
+* Drag and drop it into your project, then set it to **Embed & Sign** under your target's *General → Frameworks, Libraries, and Embedded Content*.
 
 Watch a [video walkthrough](https://youtu.be/MepAhofA9PE) of this process to simplify your life.
 

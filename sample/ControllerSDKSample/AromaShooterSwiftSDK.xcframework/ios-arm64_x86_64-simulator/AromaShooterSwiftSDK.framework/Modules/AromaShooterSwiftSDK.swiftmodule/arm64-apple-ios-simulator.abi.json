@@ -1,0 +1,2947 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AromaShooterSwiftSDK",
+    "printedName": "AromaShooterSwiftSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AromaChamber",
+        "printedName": "AromaChamber",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "number",
+            "printedName": "number",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20AromaShooterSwiftSDK0A7ChamberV6numberSivp",
+            "mangledName": "$s20AromaShooterSwiftSDK0A7ChamberV6numberSivp",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0A7ChamberV6numberSivg",
+                "mangledName": "$s20AromaShooterSwiftSDK0A7ChamberV6numberSivg",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "concentration",
+            "printedName": "concentration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20AromaShooterSwiftSDK0A7ChamberV13concentrationSivp",
+            "mangledName": "$s20AromaShooterSwiftSDK0A7ChamberV13concentrationSivp",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0A7ChamberV13concentrationSivg",
+                "mangledName": "$s20AromaShooterSwiftSDK0A7ChamberV13concentrationSivg",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(number:concentration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AromaChamber",
+                "printedName": "AromaShooterSwiftSDK.AromaChamber",
+                "usr": "s:20AromaShooterSwiftSDK0A7ChamberV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20AromaShooterSwiftSDK0A7ChamberV6number13concentrationACSi_Sitcfc",
+            "mangledName": "$s20AromaShooterSwiftSDK0A7ChamberV6number13concentrationACSi_Sitcfc",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:20AromaShooterSwiftSDK0A7ChamberV",
+        "mangledName": "$s20AromaShooterSwiftSDK0A7ChamberV",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceTableViewCell",
+        "printedName": "DeviceTableViewCell",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(style:reuseIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceTableViewCell",
+                "printedName": "AromaShooterSwiftSDK.DeviceTableViewCell",
+                "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)DeviceTableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CellStyle",
+                "printedName": "UIKit.UITableViewCell.CellStyle",
+                "usr": "c:@E@UITableViewCellStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)DeviceTableViewCell(im)initWithStyle:reuseIdentifier:",
+            "mangledName": "$s20AromaShooterSwiftSDK19DeviceTableViewCellC5style15reuseIdentifierACSo07UITablegH5StyleV_SSSgtcfc",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "implicit": true,
+            "intro_iOS": "3.0",
+            "objc_name": "initWithStyle:reuseIdentifier:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "Available"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AromaShooterSwiftSDK.DeviceTableViewCell?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceTableViewCell",
+                    "printedName": "AromaShooterSwiftSDK.DeviceTableViewCell",
+                    "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)DeviceTableViewCell"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)DeviceTableViewCell(im)initWithCoder:",
+            "mangledName": "$s20AromaShooterSwiftSDK19DeviceTableViewCellC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)DeviceTableViewCell",
+        "mangledName": "$s20AromaShooterSwiftSDK19DeviceTableViewCellC",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UITableViewCell",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UITableViewCell",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ASConnectionViewController",
+        "printedName": "ASConnectionViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)viewDidLoad",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC11viewDidLoadyyF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)viewWillAppear:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC14viewWillAppearyySbF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "viewWillAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)viewWillDisappear:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC17viewWillDisappearyySbF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "numberOfSections",
+            "printedName": "numberOfSections(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)numberOfSectionsInTableView:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC16numberOfSections2inSiSo07UITableF0C_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "numberOfSectionsInTableView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:viewForHeaderInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)tableView:viewForHeaderInSection:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC05tableF0_22viewForHeaderInSectionSo6UIViewCSgSo07UITableF0C_SitF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "tableView:viewForHeaderInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:numberOfRowsInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)tableView:numberOfRowsInSection:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC05tableF0_21numberOfRowsInSectionSiSo07UITableF0C_SitF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "tableView:numberOfRowsInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:heightForHeaderInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)tableView:heightForHeaderInSection:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC05tableF0_24heightForHeaderInSection12CoreGraphics7CGFloatVSo07UITableF0C_SitF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "tableView:heightForHeaderInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:cellForRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITableViewCell",
+                "printedName": "UIKit.UITableViewCell",
+                "usr": "c:objc(cs)UITableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)tableView:cellForRowAtIndexPath:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC05tableF0_12cellForRowAtSo07UITableF4CellCSo0mF0C_10Foundation9IndexPathVtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "tableView:cellForRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(style:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ASConnectionViewController",
+                "printedName": "AromaShooterSwiftSDK.ASConnectionViewController",
+                "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Style",
+                "printedName": "UIKit.UITableView.Style",
+                "usr": "c:@E@UITableViewStyle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)initWithStyle:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC5styleACSo07UITableF5StyleV_tcfc",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithStyle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ASConnectionViewController",
+                "printedName": "AromaShooterSwiftSDK.ASConnectionViewController",
+                "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AromaShooterSwiftSDK.ASConnectionViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ASConnectionViewController",
+                    "printedName": "AromaShooterSwiftSDK.ASConnectionViewController",
+                    "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)initWithCoder:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "aromaShooter",
+            "printedName": "aromaShooter(didDiscoverDevice:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK26ASConnectionViewControllerC05aromaB017didDiscoverDeviceyAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC05aromaB017didDiscoverDeviceyAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "aromaShooter",
+            "printedName": "aromaShooter(didConnectDevice:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK26ASConnectionViewControllerC05aromaB016didConnectDeviceyAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC05aromaB016didConnectDeviceyAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "aromaShooter",
+            "printedName": "aromaShooter(didDisconnectDevice:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK26ASConnectionViewControllerC05aromaB019didDisconnectDeviceyAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC05aromaB019didDisconnectDeviceyAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:didSelectRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController(im)tableView:didSelectRowAtIndexPath:",
+            "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC05tableF0_14didSelectRowAtySo07UITableF0C_10Foundation9IndexPathVtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "overriding": true,
+            "objc_name": "tableView:didSelectRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)ASConnectionViewController",
+        "mangledName": "$s20AromaShooterSwiftSDK26ASConnectionViewControllerC",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UITableViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UITableViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AromaShooterDelegate",
+            "printedName": "AromaShooterDelegate",
+            "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB8DelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AromaShooter",
+        "printedName": "AromaShooter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "peripheral",
+            "printedName": "peripheral",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20AromaShooterSwiftSDK0aB0V10peripheralSo12CBPeripheralCvp",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB0V10peripheralSo12CBPeripheralCvp",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V10peripheralSo12CBPeripheralCvg",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB0V10peripheralSo12CBPeripheralCvg",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20AromaShooterSwiftSDK0aB0V4nameSSSgvp",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB0V4nameSSSgvp",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V4nameSSSgvg",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB0V4nameSSSgvg",
+                "moduleName": "AromaShooterSwiftSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:20AromaShooterSwiftSDK0aB0V",
+        "mangledName": "$s20AromaShooterSwiftSDK0aB0V",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AromaShooterDelegate",
+        "printedName": "AromaShooterDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "aromaShooter",
+            "printedName": "aromaShooter(didDiscoverDevice:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP05aromaB017didDiscoverDeviceyAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB8DelegateP05aromaB017didDiscoverDeviceyAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : AromaShooterSwiftSDK.AromaShooterDelegate>",
+            "sugared_genericSig": "<Self where Self : AromaShooterSwiftSDK.AromaShooterDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "aromaShooter",
+            "printedName": "aromaShooter(didConnectDevice:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP05aromaB016didConnectDeviceyAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB8DelegateP05aromaB016didConnectDeviceyAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : AromaShooterSwiftSDK.AromaShooterDelegate>",
+            "sugared_genericSig": "<Self where Self : AromaShooterSwiftSDK.AromaShooterDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "aromaShooter",
+            "printedName": "aromaShooter(didDisconnectDevice:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP05aromaB019didDisconnectDeviceyAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB8DelegateP05aromaB019didDisconnectDeviceyAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : AromaShooterSwiftSDK.AromaShooterDelegate>",
+            "sugared_genericSig": "<Self where Self : AromaShooterSwiftSDK.AromaShooterDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP",
+        "mangledName": "$s20AromaShooterSwiftSDK0aB8DelegateP",
+        "moduleName": "AromaShooterSwiftSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AromaShooterController",
+        "printedName": "AromaShooterController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooterController",
+                "printedName": "AromaShooterSwiftSDK.AromaShooterController",
+                "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC14sharedInstanceACvpZ",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC14sharedInstanceACvpZ",
+            "moduleName": "AromaShooterSwiftSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaShooterController",
+                    "printedName": "AromaShooterSwiftSDK.AromaShooterController",
+                    "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC14sharedInstanceACvgZ",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC14sharedInstanceACvgZ",
+                "moduleName": "AromaShooterSwiftSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectedDevices",
+            "printedName": "connectedDevices",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaShooter]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaShooter",
+                    "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                    "usr": "s:20AromaShooterSwiftSDK0aB0V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC16connectedDevicesSayAA0aB0VGvp",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC16connectedDevicesSayAA0aB0VGvp",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AromaShooterSwiftSDK.AromaShooter]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AromaShooter",
+                        "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                        "usr": "s:20AromaShooterSwiftSDK0aB0V"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC16connectedDevicesSayAA0aB0VGvg",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC16connectedDevicesSayAA0aB0VGvg",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AromaShooterSwiftSDK.AromaShooter]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AromaShooter",
+                        "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                        "usr": "s:20AromaShooterSwiftSDK0aB0V"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC16connectedDevicesSayAA0aB0VGvs",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC16connectedDevicesSayAA0aB0VGvs",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC16connectedDevicesSayAA0aB0VGvM",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC16connectedDevicesSayAA0aB0VGvM",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any AromaShooterSwiftSDK.AromaShooterDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC8delegateAA0aB8Delegate_pSgvp",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC8delegateAA0aB8Delegate_pSgvp",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AromaShooterSwiftSDK.AromaShooterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AromaShooterDelegate",
+                        "printedName": "any AromaShooterSwiftSDK.AromaShooterDelegate",
+                        "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC8delegateAA0aB8Delegate_pSgvg",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC8delegateAA0aB8Delegate_pSgvg",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AromaShooterSwiftSDK.AromaShooterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AromaShooterDelegate",
+                        "printedName": "any AromaShooterSwiftSDK.AromaShooterDelegate",
+                        "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC8delegateAA0aB8Delegate_pSgvs",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC8delegateAA0aB8Delegate_pSgvs",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC8delegateAA0aB8Delegate_pSgvM",
+                "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC8delegateAA0aB8Delegate_pSgvM",
+                "moduleName": "AromaShooterSwiftSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startScanning",
+            "printedName": "startScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC13startScanningyyF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC13startScanningyyF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScanning",
+            "printedName": "stopScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC12stopScanningyyF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC12stopScanningyyF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(aromaShooters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaShooter]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaShooter",
+                    "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                    "usr": "s:20AromaShooterSwiftSDK0aB0V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC7connect13aromaShootersySayAA0aB0VG_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC7connect13aromaShootersySayAA0aB0VG_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect(aromaShooter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC10disconnect05aromaB0yAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC10disconnect05aromaB0yAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManagerDidUpdateState",
+            "printedName": "centralManagerDidUpdateState(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController(im)centralManagerDidUpdateState:",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC28centralManagerDidUpdateStateyySo09CBCentralG0CF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "objc_name": "centralManagerDidUpdateState:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didDiscover:advertisementData:rssi:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController(im)centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC14centralManager_11didDiscover17advertisementData4rssiySo09CBCentralG0C_So12CBPeripheralCSDySSypGSo8NSNumberCtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "objc_name": "centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didConnect:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController(im)centralManager:didConnectPeripheral:",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC14centralManager_10didConnectySo09CBCentralG0C_So12CBPeripheralCtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "objc_name": "centralManager:didConnectPeripheral:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didDisconnectPeripheral:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController(im)centralManager:didDisconnectPeripheral:error:",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC14centralManager_23didDisconnectPeripheral5errorySo09CBCentralG0C_So12CBPeripheralCs5Error_pSgtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "objc_name": "centralManager:didDisconnectPeripheral:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didDiscoverServices:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController(im)peripheral:didDiscoverServices:",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC10peripheral_19didDiscoverServicesySo12CBPeripheralC_s5Error_pSgtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "objc_name": "peripheral:didDiscoverServices:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didDiscoverCharacteristicsFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBService",
+                "printedName": "CoreBluetooth.CBService",
+                "usr": "c:objc(cs)CBService"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController(im)peripheral:didDiscoverCharacteristicsForService:error:",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC10peripheral_29didDiscoverCharacteristicsFor5errorySo12CBPeripheralC_So9CBServiceCs5Error_pSgtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "objc_name": "peripheral:didDiscoverCharacteristicsForService:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootSimple",
+            "printedName": "shootSimple(aromaShooter:duration:internalBooster:chamber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration15internalBooster7chamberyAA0aB0V_SiSbSitF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration15internalBooster7chamberyAA0aB0V_SiSbSitF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootSimple",
+            "printedName": "shootSimple(aromaShooter:duration:internalBooster:chambers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration15internalBooster8chambersyAA0aB0V_SiSbSaySiGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration15internalBooster8chambersyAA0aB0V_SiSbSaySiGtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootSimple",
+            "printedName": "shootSimple(aromaShooters:duration:internalBooster:chamber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaShooter]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaShooter",
+                    "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                    "usr": "s:20AromaShooterSwiftSDK0aB0V"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration15internalBooster7chamberySayAA0aB0VG_SiSbSitF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration15internalBooster7chamberySayAA0aB0VG_SiSbSitF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootSimple",
+            "printedName": "shootSimple(aromaShooters:duration:internalBooster:chambers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaShooter]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaShooter",
+                    "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                    "usr": "s:20AromaShooterSwiftSDK0aB0V"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration15internalBooster8chambersySayAA0aB0VG_SiSbSaySiGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration15internalBooster8chambersySayAA0aB0VG_SiSbSaySiGtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootAllSimple",
+            "printedName": "shootAllSimple(duration:internalBooster:chambers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC14shootAllSimple8duration15internalBooster8chambersySi_SbSaySiGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC14shootAllSimple8duration15internalBooster8chambersySi_SbSaySiGtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAllSimple",
+            "printedName": "stopAllSimple()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC13stopAllSimpleyyF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC13stopAllSimpleyyF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopSimple",
+            "printedName": "stopSimple(aromaShooter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC10stopSimple05aromaB0yAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC10stopSimple05aromaB0yAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getConnectionViewController",
+            "printedName": "getConnectionViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC017getConnectionViewE0So06UIViewE0CSgyF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC017getConnectionViewE0So06UIViewE0CSgyF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootWithIntensity",
+            "printedName": "shootWithIntensity(aromaShooters:durationInMilli:internalBoosterIntensity:externalBoosterIntensity:chambers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaShooter]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaShooter",
+                    "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                    "usr": "s:20AromaShooterSwiftSDK0aB0V"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaChamber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaChamber",
+                    "printedName": "AromaShooterSwiftSDK.AromaChamber",
+                    "usr": "s:20AromaShooterSwiftSDK0A7ChamberV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC18shootWithIntensity13aromaShooters15durationInMilli015internalBoosterH008externaloH08chambersySayAA0aB0VG_S3iSayAA0A7ChamberVGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC18shootWithIntensity13aromaShooters15durationInMilli015internalBoosterH008externaloH08chambersySayAA0aB0VG_S3iSayAA0A7ChamberVGtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootAllWithIntensity",
+            "printedName": "shootAllWithIntensity(durationInMilli:internalBoosterIntensity:externalBoosterIntensity:chambers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaChamber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaChamber",
+                    "printedName": "AromaShooterSwiftSDK.AromaChamber",
+                    "usr": "s:20AromaShooterSwiftSDK0A7ChamberV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC21shootAllWithIntensity15durationInMilli015internalBoosterI008externalnI08chambersySi_S2iSayAA0A7ChamberVGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC21shootAllWithIntensity15durationInMilli015internalBoosterI008externalnI08chambersySi_S2iSayAA0A7ChamberVGtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAllWithIntensity",
+            "printedName": "stopAllWithIntensity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC20stopAllWithIntensityyyF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC20stopAllWithIntensityyyF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopWithIntensity",
+            "printedName": "stopWithIntensity(aromaShooter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AromaShooter",
+                "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                "usr": "s:20AromaShooterSwiftSDK0aB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC17stopWithIntensity05aromaB0yAA0aB0V_tF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC17stopWithIntensity05aromaB0yAA0aB0V_tF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootAromaFlower",
+            "printedName": "shootAromaFlower(aromaShooters:durationInMilli:internalBoosterIntensity:chambers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaShooter]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaShooter",
+                    "printedName": "AromaShooterSwiftSDK.AromaShooter",
+                    "usr": "s:20AromaShooterSwiftSDK0aB0V"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaChamber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaChamber",
+                    "printedName": "AromaShooterSwiftSDK.AromaChamber",
+                    "usr": "s:20AromaShooterSwiftSDK0A7ChamberV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC05shootA6Flower13aromaShooters15durationInMilli24internalBoosterIntensity8chambersySayAA0aB0VG_S2iSayAA0A7ChamberVGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC05shootA6Flower13aromaShooters15durationInMilli24internalBoosterIntensity8chambersySayAA0aB0VG_S2iSayAA0A7ChamberVGtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shootAromaFlowerAll",
+            "printedName": "shootAromaFlowerAll(durationInMilli:internalBoosterIntensity:chambers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AromaShooterSwiftSDK.AromaChamber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AromaChamber",
+                    "printedName": "AromaShooterSwiftSDK.AromaChamber",
+                    "usr": "s:20AromaShooterSwiftSDK0A7ChamberV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC05shootA9FlowerAll15durationInMilli24internalBoosterIntensity8chambersySi_SiSayAA0A7ChamberVGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC05shootA9FlowerAll15durationInMilli24internalBoosterIntensity8chambersySi_SiSayAA0A7ChamberVGtF",
+            "moduleName": "AromaShooterSwiftSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AromaShooterSwiftSDK@objc(cs)AromaShooterController",
+        "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC",
+        "moduleName": "AromaShooterSwiftSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "AromaShooterSwiftSDK"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/UI\/Connection\/ASConnectionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 309,
+      "length": 4,
+      "value": "40.0"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/UI\/Connection\/ASConnectionViewController.swift",
+      "kind": "Array",
+      "offset": 359,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/UI\/Connection\/ASConnectionViewController.swift",
+      "kind": "Array",
+      "offset": 403,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooter.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 5,
+      "value": "\"ASM\""
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooter.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 5,
+      "value": "\"ASN\""
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 245,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "Array",
+      "offset": 426,
+      "length": 12,
+      "value": "[0x0B, 0x03]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "Array",
+      "offset": 488,
+      "length": 12,
+      "value": "[0x0B, 0x08]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "Array",
+      "offset": 561,
+      "length": 12,
+      "value": "[0x0B, 0x09]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 641,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 677,
+      "length": 4,
+      "value": "0x40"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 714,
+      "length": 4,
+      "value": "0x80"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 789,
+      "length": 5,
+      "value": "16383"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 880,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 951,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1015,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1105,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "Array",
+      "offset": 1177,
+      "length": 96,
+      "value": "[0x0B, 0x03, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
+      "kind": "Array",
+      "offset": 1312,
+      "length": 103,
+      "value": "[0x0B, 0x08, 0x00, 0x00, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterController.swift",
+      "kind": "StringLiteral",
+      "offset": 241,
+      "length": 6,
+      "value": "\"1802\""
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterController.swift",
+      "kind": "StringLiteral",
+      "offset": 294,
+      "length": 6,
+      "value": "\"2A06\""
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterController.swift",
+      "kind": "Array",
+      "offset": 985,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterController.swift",
+      "kind": "Dictionary",
+      "offset": 1063,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1097,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Library\/Developer\/Xcode\/DerivedData\/AromaShooterSwiftSDK-gwnsqrucrghybfcgqcnxbkettxxm\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AromaShooterSwiftSDK\/IntermediateBuildFilesPath\/AromaShooterSwiftSDK.build\/Release-iphonesimulator\/AromaShooterSwiftSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 741,
+      "length": 17,
+      "value": "\"ic_hexagon_gray\""
+    },
+    {
+      "filePath": "\/Users\/kanghankim\/Library\/Developer\/Xcode\/DerivedData\/AromaShooterSwiftSDK-gwnsqrucrghybfcgqcnxbkettxxm\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AromaShooterSwiftSDK\/IntermediateBuildFilesPath\/AromaShooterSwiftSDK.build\/Release-iphonesimulator\/AromaShooterSwiftSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 898,
+      "length": 18,
+      "value": "\"ic_hexagon_green\""
+    }
+  ]
+}

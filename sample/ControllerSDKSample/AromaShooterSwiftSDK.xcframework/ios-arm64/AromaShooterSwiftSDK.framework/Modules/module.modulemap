@@ -1,0 +1,11 @@
+framework module AromaShooterSwiftSDK {
+  umbrella header "AromaShooterSwiftSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module AromaShooterSwiftSDK.Swift {
+  header "AromaShooterSwiftSDK-Swift.h"
+  requires objc
+}
