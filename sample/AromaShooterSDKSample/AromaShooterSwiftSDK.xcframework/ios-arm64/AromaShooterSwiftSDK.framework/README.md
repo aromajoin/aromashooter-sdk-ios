@@ -4,14 +4,18 @@
 
 This is iOS version of Controller SDK written by Swift. 
 Protocol document can be found on [Confluence](https://aromashooter.atlassian.net/wiki/spaces/AJ/pages/14254163/Bluetooth+BLE+Protocol).
-The binary file, sample, and documentation is distributed on a separate [Github repository](https://github.com/aromajoin/controller-sdk-ios).
+The prebuilt `AromaShooterSwiftSDK.xcframework`, sample, and documentation are distributed on a separate [Github repository](https://github.com/aromajoin/aromashooter-sdk-ios).
+
+## Requirements
+* Minimum iOS deployment target: **iOS 12.0**
+* Swift 5.0+ / Xcode 12+ (builds on Xcode 26)
 
 ## Installation  
 * Add this framework as sub-project: 
-    - Clone first: git clone git@bitbucket.org:aromajoin/aromashootercontrollerswift.git  
+    - Clone first: `git clone https://github.com/aromajoin/aromashooter-sdk-ios_secret.git`
     - Go to your project in Xcode, right-click on the root of project => Click "Add Files to ...".
-    - In the file chooser, navigate to and select **AromaShooterController.xcodeproj** from the just cloned repository.
-* Add framework to **Embedded Binaries**: Select the top level node of your project, click the target and go to General tab and scroll down to Embedded Binaries section and add AromaShooterSwiftSDK framework there.
+    - In the file chooser, navigate to and select **AromaShooterSwiftSDK.xcodeproj** from the just cloned repository.
+* Embed the framework: select the top-level node of your project, click the target, go to the **General** tab, and under **Frameworks, Libraries, and Embedded Content** add the `AromaShooterSwiftSDK` framework as **Embed & Sign**.
 * Use cocoaPods: Not suppported yet.  
  
  ## Usage
