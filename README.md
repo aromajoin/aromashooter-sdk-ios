@@ -140,8 +140,8 @@ controller.stopAllWithIntensity()
 controller.stopWithIntensity(aromaShooter: device)
 ```
 
-**For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/aromashooter-sdk-ios/tree/master/sample).**  
+**For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/aromashooter-sdk-ios/tree/main/sample).**  
 **If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/aromashooter-sdk-ios/issues).** 
 
 ## License
-Please check the [LICENSE](/LICENSE.md) file for the details.
+Please check the [LICENSE](/LICENSE) file for the details.
