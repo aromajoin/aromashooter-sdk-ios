@@ -8,7 +8,7 @@
 
 **[Aroma Shooter](https://aromajoin.com/products/aroma-shooter)との通信に使用されるAromaShooterController SDKのiOS版です。**  
 
-> **v2.0.0は破壊的変更を含むリリースです。** `diffuse*` メソッドは `shoot*` に、モデル `CartridgePort` は `AromaChamber`（`intensityPercent` → `concentration`）に、`booster`/`fan` パラメータは `innerBooster`/`outerBooster` に名称変更されました。
+> **v3.0.0は破壊的変更を含むリリースです**（v2.0.0 の変更に加えて）。`diffuse*` メソッドは `shoot*`、モデル `CartridgePort` は `AromaChamber`（`intensityPercent` → `concentration`）、ブースターのパラメータは `innerBooster` / `innerBoosterIntensity` / `outerBoosterIntensity` です（v2.0.0 では `internalBooster` / `internalBoosterIntensity` / `externalBoosterIntensity`）。
 
 # 目次
 1. [対応デバイス](#対応デバイス)
@@ -100,7 +100,7 @@ controller.disconnect(aromaShooter: device)
 let connectedDevices = controller.connectedDevices
 ```  
 ### 香りを噴射する
-> **注意:** 香りが出るには inner booster を有効にする必要があります — `innerBooster: true`（シンプル）または `innerBoosterIntensity > 0`（強度指定）を指定してください。オフの場合は何も噴射されません。outer booster（`outerBoosterIntensity`、旧「fan」）はAS3のみに存在します。
+> **注意:** 香りが出るには inner booster を有効にする必要があります — `innerBooster: true`（シンプル）または `innerBoosterIntensity > 0`（強度指定）を指定してください。オフの場合は何も噴射されません。outer booster（`outerBoosterIntensity`）はAS3のみに存在します。
 
 **シンプルモード（AS1 / AS2）** — チャンバーのオン/オフのみ、強度指定なし:
 ```swift

@@ -9,7 +9,7 @@
 
 **The iOS version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/products/aroma-shooter)**.
 
-> **v2.0.0 is a breaking release.** The `diffuse*` methods are renamed to `shoot*`, the `CartridgePort` model becomes `AromaChamber` (`intensityPercent` → `concentration`), and the `booster`/`fan` parameters become `innerBooster`/`outerBooster`. See the [CHANGELOG](sample/AromaShooterSDKSample/AromaShooterSwiftSDK.xcframework/ios-arm64/AromaShooterSwiftSDK.framework/CHANGELOG.md).
+> **v3.0.0 is a breaking release** (on top of v2.0.0). The `diffuse*` methods are `shoot*`, the `CartridgePort` model is `AromaChamber` (`intensityPercent` → `concentration`), and the booster parameters are `innerBooster` / `innerBoosterIntensity` / `outerBoosterIntensity` (v2.0.0 called them `internalBooster` / `internalBoosterIntensity` / `externalBoosterIntensity`). See the [CHANGELOG](sample/AromaShooterSDKSample/AromaShooterSwiftSDK.xcframework/ios-arm64/AromaShooterSwiftSDK.framework/CHANGELOG.md).
 
 # Table of Contents
 1. [Supported devices](#supported-devices)  
@@ -101,7 +101,7 @@ controller.disconnect(aromaShooter: device)
 let connectedDevices = controller.connectedDevices
 ```  
 ### Shoot scents
-> **Note:** the inner booster must be enabled for any scent to emit — pass `innerBooster: true` (simple) or `innerBoosterIntensity > 0` (with intensity). If it is off, nothing comes out. The outer booster (`outerBoosterIntensity`, formerly "fan") exists on AS3 only.
+> **Note:** the inner booster must be enabled for any scent to emit — pass `innerBooster: true` (simple) or `innerBoosterIntensity > 0` (with intensity). If it is off, nothing comes out. The outer booster (`outerBoosterIntensity`) exists on AS3 only.
 
 **Simple mode (AS1 / AS2)** — chambers on/off, no per-chamber intensity:
 ```swift
