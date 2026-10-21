@@ -2,13 +2,13 @@
 
 # Aroma Shooter SDK (iOS)
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/aromashooter-sdk-ios/releases)
+[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/aromashooter-sdk-ios/releases)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html) 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/aromajoin-software/)
 
 **[Aroma Shooter](https://aromajoin.com/products/aroma-shooter)との通信に使用されるAromaShooterController SDKのiOS版です。**  
 
-> **v2.0.0は破壊的変更を含むリリースです。** `diffuse*` メソッドは `shoot*` に、モデル `CartridgePort` は `AromaChamber`（`intensityPercent` → `concentration`）に、`booster`/`fan` パラメータは `internalBooster`/`externalBooster` に名称変更されました。
+> **v2.0.0は破壊的変更を含むリリースです。** `diffuse*` メソッドは `shoot*` に、モデル `CartridgePort` は `AromaChamber`（`intensityPercent` → `concentration`）に、`booster`/`fan` パラメータは `innerBooster`/`outerBooster` に名称変更されました。
 
 # 目次
 1. [対応デバイス](#対応デバイス)
@@ -100,36 +100,36 @@ controller.disconnect(aromaShooter: device)
 let connectedDevices = controller.connectedDevices
 ```  
 ### 香りを噴射する
-> **注意:** 香りが出るには内部ブースターを有効にする必要があります — `internalBooster: true`（シンプル）または `internalBoosterIntensity > 0`（強度指定）を指定してください。オフの場合は何も噴射されません。外部ブースター（`externalBoosterIntensity`、旧「fan」）はAS3のみに存在します。
+> **注意:** 香りが出るには inner booster を有効にする必要があります — `innerBooster: true`（シンプル）または `innerBoosterIntensity > 0`（強度指定）を指定してください。オフの場合は何も噴射されません。outer booster（`outerBoosterIntensity`、旧「fan」）はAS3のみに存在します。
 
 **シンプルモード（AS1 / AS2）** — チャンバーのオン/オフのみ、強度指定なし:
 ```swift
 /**
  * @param duration        噴射持続時間（ミリ秒）。
- * @param internalBooster 内部ブースターを有効にするかどうか。(true: より強く噴射する, false: より弱く噴射する)
+ * @param innerBooster inner booster を有効にするかどうか。(true: より強く噴射する, false: より弱く噴射する)
  * @param chambers        噴射するチャンバー番号。値：1 ~ 6.
  */
 // 接続中の全デバイス・複数チャンバー
-controller.shootAllSimple(duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+controller.shootAllSimple(duration: 3000, innerBooster: true, chambers: [1, 2, 3])
 
 // 特定のデバイス・複数チャンバー
-controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+controller.shootSimple(aromaShooters: devices, duration: 3000, innerBooster: true, chambers: [1, 2, 3])
 
 // 単一チャンバー（1台または複数台）
-controller.shootSimple(aromaShooter: device, duration: 3000, internalBooster: true, chamber: 1)
-controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chamber: 1)
+controller.shootSimple(aromaShooter: device, duration: 3000, innerBooster: true, chamber: 1)
+controller.shootSimple(aromaShooters: devices, duration: 3000, innerBooster: true, chamber: 1)
 
 // 1台・複数チャンバー
-controller.shootSimple(aromaShooter: device, duration: 3000, internalBooster: true, chambers: [1, 2])
+controller.shootSimple(aromaShooter: device, duration: 3000, innerBooster: true, chambers: [1, 2])
 ```
 
-**強度指定モード（AS2 / AS3）** — チャンバーごとの濃度 + 内部/外部ブースター（外部ブースターはAS3のみ）:
+**強度指定モード（AS2 / AS3）** — チャンバーごとの濃度 + inner / outer booster（outer booster はAS3のみ）:
 ```swift
 // 接続中の全デバイス
-controller.shootAllWithIntensity(durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
+controller.shootAllWithIntensity(durationInMilli: 1000, innerBoosterIntensity: 50, outerBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
 
 // 特定のデバイス
-controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 40, chambers: [AromaChamber(number: 3, concentration: 100)])
+controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, innerBoosterIntensity: 50, outerBoosterIntensity: 40, chambers: [AromaChamber(number: 3, concentration: 100)])
 ```
 
 ### 噴射を止める

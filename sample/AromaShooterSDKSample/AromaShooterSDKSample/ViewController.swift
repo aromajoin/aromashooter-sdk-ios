@@ -16,8 +16,8 @@ final class ViewController: UIViewController {
   private let chamberCount = 6
   private var concentrations = Array(repeating: 100, count: 6)   // per-chamber, 0...100
   private var durationMillis = 3000
-  private var internalBooster = 100                              // 0...100
-  private var externalBooster = 0                                // 0...100 (AS3 only)
+  private var innerBooster = 100                              // 0...100
+  private var outerBooster = 0                                // 0...100 (AS3 only)
 
   // MARK: UI
 
@@ -96,18 +96,18 @@ final class ViewController: UIViewController {
   private func makeSettingsCard() -> UIView {
     let duration = labeledField(title: "Duration (ms)", value: "\(durationMillis)",
                                 action: #selector(durationChanged(_:)))
-    let internalRow = sliderRow(title: "Internal booster", value: internalBooster,
-                                tag: 100, action: #selector(internalBoosterChanged(_:)))
-    let externalRow = sliderRow(title: "External booster (AS3)", value: externalBooster,
-                                tag: 101, action: #selector(externalBoosterChanged(_:)))
+    let innerRow = sliderRow(title: "Inner booster", value: innerBooster,
+                                tag: 100, action: #selector(innerBoosterChanged(_:)))
+    let outerRow = sliderRow(title: "Outer booster (AS3)", value: outerBooster,
+                                tag: 101, action: #selector(outerBoosterChanged(_:)))
 
     let note = UILabel()
-    note.text = "The internal booster must be > 0 for any scent to emit."
+    note.text = "The inner booster must be > 0 for any scent to emit."
     note.font = .preferredFont(forTextStyle: .footnote)
     note.textColor = .appSecondaryLabel
     note.numberOfLines = 0
 
-    let stack = UIStackView(arrangedSubviews: [duration, internalRow, externalRow, note])
+    let stack = UIStackView(arrangedSubviews: [duration, innerRow, outerRow, note])
     stack.axis = .vertical
     stack.spacing = 14
     return card(titled: "Settings", content: stack)
@@ -191,14 +191,14 @@ final class ViewController: UIViewController {
     else { field.text = "\(durationMillis)" }
   }
 
-  @objc private func internalBoosterChanged(_ slider: UISlider) {
-    internalBooster = Int(slider.value)
-    (view.viewWithTag(300) as? UILabel)?.text = "\(internalBooster)%"
+  @objc private func innerBoosterChanged(_ slider: UISlider) {
+    innerBooster = Int(slider.value)
+    (view.viewWithTag(300) as? UILabel)?.text = "\(innerBooster)%"
   }
 
-  @objc private func externalBoosterChanged(_ slider: UISlider) {
-    externalBooster = Int(slider.value)
-    (view.viewWithTag(301) as? UILabel)?.text = "\(externalBooster)%"
+  @objc private func outerBoosterChanged(_ slider: UISlider) {
+    outerBooster = Int(slider.value)
+    (view.viewWithTag(301) as? UILabel)?.text = "\(outerBooster)%"
   }
 
   @objc private func concentrationChanged(_ slider: UISlider) {
@@ -215,8 +215,8 @@ final class ViewController: UIViewController {
     let n = sender.tag
     let chamber = AromaChamber(number: n, concentration: concentrations[n - 1])
     controller.shootAllWithIntensity(durationInMilli: durationMillis,
-                                     internalBoosterIntensity: internalBooster,
-                                     externalBoosterIntensity: externalBooster,
+                                     innerBoosterIntensity: innerBooster,
+                                     outerBoosterIntensity: outerBooster,
                                      chambers: [chamber])
   }
 
@@ -296,7 +296,7 @@ final class ViewController: UIViewController {
     label.textColor = .appLabel
 
     let valueLabel = UILabel()
-    // Value-label tags: 300 = internal booster, 301 = external booster.
+    // Value-label tags: 300 = inner booster, 301 = outer booster.
     valueLabel.tag = (tag == 100) ? 300 : 301
     valueLabel.font = .monospacedDigitSystemFont(ofSize: 15, weight: .regular)
     valueLabel.textColor = .appSecondaryLabel

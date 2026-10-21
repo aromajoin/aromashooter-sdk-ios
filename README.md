@@ -2,14 +2,14 @@
 
 # Aroma Shooter SDK (iOS)
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/aromashooter-sdk-ios/releases)
+[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/aromashooter-sdk-ios/releases)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html) 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/aromajoin-software/)
 
 
 **The iOS version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/products/aroma-shooter)**.
 
-> **v2.0.0 is a breaking release.** The `diffuse*` methods are renamed to `shoot*`, the `CartridgePort` model becomes `AromaChamber` (`intensityPercent` → `concentration`), and the `booster`/`fan` parameters become `internalBooster`/`externalBooster`. See the [CHANGELOG](sample/AromaShooterSDKSample/AromaShooterSwiftSDK.xcframework/ios-arm64/AromaShooterSwiftSDK.framework/CHANGELOG.md).
+> **v2.0.0 is a breaking release.** The `diffuse*` methods are renamed to `shoot*`, the `CartridgePort` model becomes `AromaChamber` (`intensityPercent` → `concentration`), and the `booster`/`fan` parameters become `innerBooster`/`outerBooster`. See the [CHANGELOG](sample/AromaShooterSDKSample/AromaShooterSwiftSDK.xcframework/ios-arm64/AromaShooterSwiftSDK.framework/CHANGELOG.md).
 
 # Table of Contents
 1. [Supported devices](#supported-devices)  
@@ -101,31 +101,31 @@ controller.disconnect(aromaShooter: device)
 let connectedDevices = controller.connectedDevices
 ```  
 ### Shoot scents
-> **Note:** the internal booster must be enabled for any scent to emit — pass `internalBooster: true` (simple) or `internalBoosterIntensity > 0` (with intensity). If it is off, nothing comes out. The external booster (`externalBoosterIntensity`, formerly "fan") exists on AS3 only.
+> **Note:** the inner booster must be enabled for any scent to emit — pass `innerBooster: true` (simple) or `innerBoosterIntensity > 0` (with intensity). If it is off, nothing comes out. The outer booster (`outerBoosterIntensity`, formerly "fan") exists on AS3 only.
 
 **Simple mode (AS1 / AS2)** — chambers on/off, no per-chamber intensity:
 ```swift
 // All connected devices, multiple chambers
-controller.shootAllSimple(duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+controller.shootAllSimple(duration: 3000, innerBooster: true, chambers: [1, 2, 3])
 
 // Specific devices, multiple chambers
-controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+controller.shootSimple(aromaShooters: devices, duration: 3000, innerBooster: true, chambers: [1, 2, 3])
 
 // A single chamber (one device, or several)
-controller.shootSimple(aromaShooter: device, duration: 3000, internalBooster: true, chamber: 1)
-controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chamber: 1)
+controller.shootSimple(aromaShooter: device, duration: 3000, innerBooster: true, chamber: 1)
+controller.shootSimple(aromaShooters: devices, duration: 3000, innerBooster: true, chamber: 1)
 
 // One device, multiple chambers
-controller.shootSimple(aromaShooter: device, duration: 3000, internalBooster: true, chambers: [1, 2])
+controller.shootSimple(aromaShooter: device, duration: 3000, innerBooster: true, chambers: [1, 2])
 ```
 
-**Intensity mode (AS2 / AS3)** — per-chamber concentration + internal/external booster (external booster is AS3 only):
+**Intensity mode (AS2 / AS3)** — per-chamber concentration + inner/outer booster (outer booster is AS3 only):
 ```swift
 // All connected devices
-controller.shootAllWithIntensity(durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
+controller.shootAllWithIntensity(durationInMilli: 1000, innerBoosterIntensity: 50, outerBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
 
 // Specific devices
-controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 40, chambers: [AromaChamber(number: 3, concentration: 100)])
+controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, innerBoosterIntensity: 50, outerBoosterIntensity: 40, chambers: [AromaChamber(number: 3, concentration: 100)])
 ```
 
 ### Stop shooting
