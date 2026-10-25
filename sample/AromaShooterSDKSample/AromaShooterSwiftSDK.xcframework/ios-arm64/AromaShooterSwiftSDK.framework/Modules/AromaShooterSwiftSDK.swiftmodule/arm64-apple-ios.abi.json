@@ -296,38 +296,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -338,17 +310,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -359,10 +331,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -370,6 +363,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -983,45 +983,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+            "name": "AromaShooterDelegate",
+            "printedName": "AromaShooterDelegate",
+            "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB8DelegateP"
           },
           {
             "kind": "Conformance",
@@ -1032,10 +997,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -1043,6 +1022,34 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -1064,13 +1071,6 @@
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "AromaShooterDelegate",
-            "printedName": "AromaShooterDelegate",
-            "usr": "s:20AromaShooterSwiftSDK0aB8DelegateP",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB8DelegateP"
           }
         ]
       },
@@ -2009,7 +2009,7 @@
           {
             "kind": "Function",
             "name": "shootSimple",
-            "printedName": "shootSimple(aromaShooter:duration:internalBooster:chamber:)",
+            "printedName": "shootSimple(aromaShooter:duration:innerBooster:chamber:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2042,8 +2042,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration15internalBooster7chamberyAA0aB0V_SiSbSitF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration15internalBooster7chamberyAA0aB0V_SiSbSitF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration12innerBooster7chamberyAA0aB0V_SiSbSitF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration12innerBooster7chamberyAA0aB0V_SiSbSitF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2055,7 +2055,7 @@
           {
             "kind": "Function",
             "name": "shootSimple",
-            "printedName": "shootSimple(aromaShooter:duration:internalBooster:chambers:)",
+            "printedName": "shootSimple(aromaShooter:duration:innerBooster:chambers:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2096,8 +2096,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration15internalBooster8chambersyAA0aB0V_SiSbSaySiGtF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration15internalBooster8chambersyAA0aB0V_SiSbSaySiGtF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration12innerBooster8chambersyAA0aB0V_SiSbSaySiGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple05aromaB08duration12innerBooster8chambersyAA0aB0V_SiSbSaySiGtF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2109,7 +2109,7 @@
           {
             "kind": "Function",
             "name": "shootSimple",
-            "printedName": "shootSimple(aromaShooters:duration:internalBooster:chamber:)",
+            "printedName": "shootSimple(aromaShooters:duration:innerBooster:chamber:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2150,8 +2150,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration15internalBooster7chamberySayAA0aB0VG_SiSbSitF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration15internalBooster7chamberySayAA0aB0VG_SiSbSitF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration12innerBooster7chamberySayAA0aB0VG_SiSbSitF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration12innerBooster7chamberySayAA0aB0VG_SiSbSitF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2163,7 +2163,7 @@
           {
             "kind": "Function",
             "name": "shootSimple",
-            "printedName": "shootSimple(aromaShooters:duration:internalBooster:chambers:)",
+            "printedName": "shootSimple(aromaShooters:duration:innerBooster:chambers:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2212,8 +2212,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration15internalBooster8chambersySayAA0aB0VG_SiSbSaySiGtF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration15internalBooster8chambersySayAA0aB0VG_SiSbSaySiGtF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration12innerBooster8chambersySayAA0aB0VG_SiSbSaySiGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC11shootSimple13aromaShooters8duration12innerBooster8chambersySayAA0aB0VG_SiSbSaySiGtF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2225,7 +2225,7 @@
           {
             "kind": "Function",
             "name": "shootAllSimple",
-            "printedName": "shootAllSimple(duration:internalBooster:chambers:)",
+            "printedName": "shootAllSimple(duration:innerBooster:chambers:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2260,8 +2260,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC14shootAllSimple8duration15internalBooster8chambersySi_SbSaySiGtF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC14shootAllSimple8duration15internalBooster8chambersySi_SbSaySiGtF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC14shootAllSimple8duration12innerBooster8chambersySi_SbSaySiGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC14shootAllSimple8duration12innerBooster8chambersySi_SbSaySiGtF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2354,7 +2354,7 @@
           {
             "kind": "Function",
             "name": "shootWithIntensity",
-            "printedName": "shootWithIntensity(aromaShooters:durationInMilli:internalBoosterIntensity:externalBoosterIntensity:chambers:)",
+            "printedName": "shootWithIntensity(aromaShooters:durationInMilli:innerBoosterIntensity:outerBoosterIntensity:chambers:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2409,8 +2409,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC18shootWithIntensity13aromaShooters15durationInMilli015internalBoosterH008externaloH08chambersySayAA0aB0VG_S3iSayAA0A7ChamberVGtF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC18shootWithIntensity13aromaShooters15durationInMilli015internalBoosterH008externaloH08chambersySayAA0aB0VG_S3iSayAA0A7ChamberVGtF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC18shootWithIntensity13aromaShooters15durationInMilli012innerBoosterH005outeroH08chambersySayAA0aB0VG_S3iSayAA0A7ChamberVGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC18shootWithIntensity13aromaShooters15durationInMilli012innerBoosterH005outeroH08chambersySayAA0aB0VG_S3iSayAA0A7ChamberVGtF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2422,7 +2422,7 @@
           {
             "kind": "Function",
             "name": "shootAllWithIntensity",
-            "printedName": "shootAllWithIntensity(durationInMilli:internalBoosterIntensity:externalBoosterIntensity:chambers:)",
+            "printedName": "shootAllWithIntensity(durationInMilli:innerBoosterIntensity:outerBoosterIntensity:chambers:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2463,8 +2463,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC21shootAllWithIntensity15durationInMilli015internalBoosterI008externalnI08chambersySi_S2iSayAA0A7ChamberVGtF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC21shootAllWithIntensity15durationInMilli015internalBoosterI008externalnI08chambersySi_S2iSayAA0A7ChamberVGtF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC21shootAllWithIntensity15durationInMilli012innerBoosterI005outernI08chambersySi_S2iSayAA0A7ChamberVGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC21shootAllWithIntensity15durationInMilli012innerBoosterI005outernI08chambersySi_S2iSayAA0A7ChamberVGtF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2526,7 +2526,7 @@
           {
             "kind": "Function",
             "name": "shootAromaFlower",
-            "printedName": "shootAromaFlower(aromaShooters:durationInMilli:internalBoosterIntensity:chambers:)",
+            "printedName": "shootAromaFlower(aromaShooters:durationInMilli:innerBoosterIntensity:chambers:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2575,8 +2575,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC05shootA6Flower13aromaShooters15durationInMilli24internalBoosterIntensity8chambersySayAA0aB0VG_S2iSayAA0A7ChamberVGtF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC05shootA6Flower13aromaShooters15durationInMilli24internalBoosterIntensity8chambersySayAA0aB0VG_S2iSayAA0A7ChamberVGtF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC05shootA6Flower13aromaShooters15durationInMilli21innerBoosterIntensity8chambersySayAA0aB0VG_S2iSayAA0A7ChamberVGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC05shootA6Flower13aromaShooters15durationInMilli21innerBoosterIntensity8chambersySayAA0aB0VG_S2iSayAA0A7ChamberVGtF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2588,7 +2588,7 @@
           {
             "kind": "Function",
             "name": "shootAromaFlowerAll",
-            "printedName": "shootAromaFlowerAll(durationInMilli:internalBoosterIntensity:chambers:)",
+            "printedName": "shootAromaFlowerAll(durationInMilli:innerBoosterIntensity:chambers:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2623,8 +2623,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC05shootA9FlowerAll15durationInMilli24internalBoosterIntensity8chambersySi_SiSayAA0A7ChamberVGtF",
-            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC05shootA9FlowerAll15durationInMilli24internalBoosterIntensity8chambersySi_SiSayAA0A7ChamberVGtF",
+            "usr": "s:20AromaShooterSwiftSDK0aB10ControllerC05shootA9FlowerAll15durationInMilli21innerBoosterIntensity8chambersySi_SiSayAA0A7ChamberVGtF",
+            "mangledName": "$s20AromaShooterSwiftSDK0aB10ControllerC05shootA9FlowerAll15durationInMilli21innerBoosterIntensity8chambersySi_SiSayAA0A7ChamberVGtF",
             "moduleName": "AromaShooterSwiftSDK",
             "declAttributes": [
               "AccessControl",
@@ -2652,38 +2652,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -2694,10 +2666,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2708,10 +2694,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -2869,28 +2869,28 @@
     {
       "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1015,
+      "offset": 1009,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1105,
+      "offset": 1099,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
       "kind": "Array",
-      "offset": 1177,
+      "offset": 1171,
       "length": 96,
       "value": "[0x0B, 0x03, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00]"
     },
     {
       "filePath": "\/Users\/kanghankim\/Projects\/aromashooter-sdk-ios_secret\/AromaShooterSwiftSDK\/AromaShooterCommand.swift",
       "kind": "Array",
-      "offset": 1312,
+      "offset": 1306,
       "length": 103,
       "value": "[0x0B, 0x08, 0x00, 0x00, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80]"
     },

@@ -7,5 +7,4 @@ framework module AromaShooterSwiftSDK {
 
 module AromaShooterSwiftSDK.Swift {
   header "AromaShooterSwiftSDK-Swift.h"
-  requires objc
 }

@@ -26,7 +26,7 @@
 * Aroma Shooter Bluetooth version 
 
 ## Prerequisites
-* iOS version: >= 12.0
+* iOS version: >= 15.0
 * Swift version: >= 5.0
 
 ## Installation  

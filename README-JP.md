@@ -25,7 +25,7 @@
 * Aroma Shooter Bluetoothタイプ
 
 ## 前提条件
-* iOS版: >= 12.0
+* iOS版: >= 15.0
 * Swift版: >= 5.0
 
 ## インストール  

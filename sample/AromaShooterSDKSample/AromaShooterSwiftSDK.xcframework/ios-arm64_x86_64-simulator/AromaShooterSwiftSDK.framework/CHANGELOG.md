@@ -1,4 +1,10 @@
 # Change log
+Version 3.0.0 (2026-10-21)
+---
+- BREAKING: booster params renamed internal/external -> inner/outer — `internalBooster` → `innerBooster`, `internalBoosterIntensity` → `innerBoosterIntensity`, `externalBoosterIntensity` → `outerBoosterIntensity`
+- No wire-protocol or behavioral change — identifiers only. Swift argument labels change, so every call site must be updated. Clean break, no deprecated aliases. Same rename ships across every AromaShooter SDK and firmware 2.2.2.
+- BREAKING: minimum iOS deployment target raised 12.0 -> 15.0 (Xcode 27 no longer supports iOS 12).
+
 Version 2.0.0 (2026-07-11)
 ---
 - BREAKING: renamed `diffuse*` APIs to `shoot*` — `shootSimple` / `shootAllSimple` / `shootWithIntensity` / `shootAllWithIntensity` / `shootAromaFlower` / `shootAromaFlowerAll`, and `stop`/`stopAll` → `stopSimple`/`stopAllSimple`

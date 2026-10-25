@@ -1,13 +1,13 @@
 # Aroma Shooter SDK (iOS)
 
-**Version 2.0.0**
+**Version 3.0.0**
 
 This is iOS version of Controller SDK written by Swift. 
 Protocol document can be found on [Confluence](https://aromashooter.atlassian.net/wiki/spaces/AJ/pages/14254163/Bluetooth+BLE+Protocol).
 The prebuilt `AromaShooterSwiftSDK.xcframework`, sample, and documentation are distributed on a separate [Github repository](https://github.com/aromajoin/aromashooter-sdk-ios).
 
 ## Requirements
-* Minimum iOS deployment target: **iOS 12.0**
+* Minimum iOS deployment target: **iOS 15.0**
 * Swift 5.0+ / Xcode 12+ (builds on Xcode 26)
 
 ## Installation  
@@ -53,16 +53,16 @@ The prebuilt `AromaShooterSwiftSDK.xcframework`, sample, and documentation are d
  ```swift
  let connectedDevices = controller.connectedDevices
  ```  
- > **Note:** The internal booster must be enabled for any scent to emit — pass `internalBooster: true` (simple) or `internalBoosterIntensity > 0` (with intensity). If it is off, nothing comes out. The external booster (`externalBoosterIntensity`, formerly "fan") exists on AS3 only.
+ > **Note:** The inner booster must be enabled for any scent to emit — pass `innerBooster: true` (simple) or `innerBoosterIntensity > 0` (with intensity). If it is off, nothing comes out. The outer booster (`outerBoosterIntensity`) exists on AS3 only.
 
  ### Shoot scents
  * Shoot scents of all connected devices  
  ```swift
- controller.shootAllSimple(duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+ controller.shootAllSimple(duration: 3000, innerBooster: true, chambers: [1, 2, 3])
  ```  
  * Shoot scents of specific devices  
  ```swift
- controller.shootSimple(aromaShooters: devices, duration: 3000, internalBooster: true, chambers: [1, 2, 3])
+ controller.shootSimple(aromaShooters: devices, duration: 3000, innerBooster: true, chambers: [1, 2, 3])
  ```  
  
  ### Stop shooting
@@ -75,11 +75,11 @@ The prebuilt `AromaShooterSwiftSDK.xcframework`, sample, and documentation are d
  ### Shoot scents. 
  * Shoot scents of all connected devices  
  ```swift
- controller.shootAllWithIntensity(durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
+ controller.shootAllWithIntensity(durationInMilli: 1000, innerBoosterIntensity: 50, outerBoosterIntensity: 50, chambers: [AromaChamber(number: 3, concentration: 100)])
  ```  
  * Shoot scents of specific devices  
  ```swift
- controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, internalBoosterIntensity: 50, externalBoosterIntensity: 0, chambers: [AromaChamber(number: 3, concentration: 100)])
+ controller.shootWithIntensity(aromaShooters: controller.connectedDevices, durationInMilli: 1000, innerBoosterIntensity: 50, outerBoosterIntensity: 0, chambers: [AromaChamber(number: 3, concentration: 100)])
  ```  
  
  ### Stop shooting (AS2)
