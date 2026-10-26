@@ -3,7 +3,7 @@
 # Aroma Shooter SDK (iOS)
 
 [![Version](https://img.shields.io/badge/version-3.0.0-blue.svg?style=flat-square)](https://github.com/aromajoin/aromashooter-sdk-ios/releases)
-[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html) 
+[![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-4EB1BA.svg?style=flat-square)](LICENSE) 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/aromajoin-software/)
 
 **[Aroma Shooter](https://aromajoin.com/products/aroma-shooter)との通信に使用されるAromaShooterController SDKのiOS版です。**  
@@ -149,4 +149,4 @@ controller.stopWithIntensity(aromaShooter: device)
 **問題が発生したり、新機能が必要な場合は、[新しい問題](https://github.com/aromajoin/aromashooter-sdk-ios/issues)を作成してください。**
 
 ## ライセンス
-[こちら](https://github.com/aromajoin/aromashooter-sdk-ios/blob/main/LICENSE)を参照してください。
+非商用利用は [PolyForm Noncommercial License 1.0.0](LICENSE) のもとで無料です。Aroma Shooter® を使った自社製品・サービスの開発を含む商用利用には、Aromajoin のライセンスが必要です：contact@aromajoin.com。サンプルコードは [MIT-0](LICENSE-SAMPLES) です。2026 年 10 月より前にリリースしたバージョンは Apache-2.0 のままです。
